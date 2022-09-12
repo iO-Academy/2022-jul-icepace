@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+$main-background-color: #ECEFF8;
+
+$navbar-color: #4F9CC8;
+
+
+
+body{
+  background-color: $main-background-color;
+  nav {
+    background-color: $navbar-color;
+    padding: 10px;
+    position: fixed;
+    }
+    h1{
+      padding-left: 10px;
+      color: white;
+    }
+  .user-header {
+    padding: 15px;
+  }
+}
+
+

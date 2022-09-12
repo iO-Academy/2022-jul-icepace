@@ -12,6 +12,16 @@ require_once "vendor/autoload.php";
     <title>Icepace</title>
 </head>
 <body>
-
+    <nav>
+        <h1>Icepace</h1>
+    </nav>
+    <div>
+        <div>
+            <h2 class="user-header">All users</h2>
+        </div>
+        <card>
+            <img src="" alt="" >
+        </card>
+    </div>
 </body>
 </html>
