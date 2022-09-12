@@ -22,14 +22,12 @@ class User
         return $this->bio;
     }
 
-    public function getHashedPass(): string
-    {
-        return $this->hashed_pass;
-    }
-
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '';
+        $htmlOutput = '<div class="userCard">';
+        $htmlOutput .= '<img class="avatarImg" src="'$this->avatar'" alt="Profile Picture">';
+        $htmlOutput .= '<p class='cardUsernameText'>$this->username</p>';
+        $htmlOutput .= '</div>';
         return $htmlOutput;
     }
 }
