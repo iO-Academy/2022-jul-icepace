@@ -1,5 +1,7 @@
 <?php
 
+namespace Icepace;
+
 class User
 {
     protected string $username;

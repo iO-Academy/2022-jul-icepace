@@ -1,7 +1,7 @@
 <?php
 require_once "vendor/autoload.php";
 
-function displayUsers(array $allUsers)
+function displayUsers(array $allUsers): string
 {
     $allUsersOutputString = '<div class="allUserCardContainer">';
 
