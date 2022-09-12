@@ -2,6 +2,8 @@
 
 namespace Icepace;
 
+use PDO;
+
 class UsersHydrator
 {
     public static function getAllUsers(PDO $db): array
