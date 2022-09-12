@@ -1,5 +1,10 @@
 <?php
+
+use Icepace\UsersHydrator;
+
 require_once "vendor/autoload.php";
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$users = UsersHydrator::getAllUsers($db);
 
 ?>
 <!DOCTYPE html>

@@ -4,7 +4,7 @@ namespace Icepace;
 
 class UsersHydrator
 {
-    public static function getAllUsers(PDO $db)
+    public static function getAllUsers(PDO $db): array
     {
         $query = $db->prepare('SELECT * FROM `users`');
         $query->setFetchMode(PDO::FETCH_CLASS, User::class);
