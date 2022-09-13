@@ -15,48 +15,41 @@ body nav {
   z-index: 10;
 }
 body h1 {
-  padding: 15px 0px 15px 10px;
+  padding: 15px 0 15px 10px;
   color: white;
 }
-body .allUserCardContainer {
+body .allUserCardsContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 50vw;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 30px;
 }
-body .allUserCardContainer .user-header {
+body .allUserCardsContainer .user-header {
   padding-top: 100px;
   text-align: left;
 }
-body .allUserCardContainer .userCard {
+body .allUserCardsContainer .userCard {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #9DBED4;
-  width: 50vw;
+  width: 100%;
   border: solid 2px #4F9CC8;
   padding-bottom: 10px;
   margin: 20px auto;
 }
-body .allUserCardContainer .userCard .avatarImg {
+body .allUserCardsContainer .userCard .avatarImg {
   width: 150px;
   height: 150px;
   object-fit: cover;
   clip-path: circle(40% at 50% 50%);
   align-self: center;
 }
-body .allUserCardContainer .userCard .cardUsernameText {
+body .allUserCardsContainer .userCard .cardUsernameText {
   align-self: center;
   padding: 10px;
-}
-@media screen and (max-width: 500px) {
-  body .allUserCardContainer {
-    width: 90vw;
-  }
-  body .allUserCardContainer .userCard {
-    width: 90vw;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
