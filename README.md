@@ -1,4 +1,4 @@
-# 2022-SurfingPenguine's-Icepace
+# 2022-SurfingPenguin's-Icepace
 
 Welcome to the Surfing Penguine's OOP Social Media App
 
