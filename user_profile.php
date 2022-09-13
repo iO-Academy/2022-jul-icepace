@@ -42,6 +42,5 @@ $user = UserHydrator::getUserById($db, $username);
     </div>
 </div>
 </div>
-<? print_r($user); ?>
 </body>
 </html>
