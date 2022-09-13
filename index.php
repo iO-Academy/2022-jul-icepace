@@ -6,6 +6,17 @@ require_once "vendor/autoload.php";
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $users = UsersHydrator::getAllUsers($db);
 
+function displayUsers(array $allUsers): string
+{
+    $allUsersOutputString = '<div class="allUserCardContainer">';
+
+    foreach ($allUsers as $user){
+        $allUsersOutputString .= $user->creatUserCardHtml();
+    }
+    $allUsersOutputString .= "</div>";
+    return $allUsersOutputString;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
