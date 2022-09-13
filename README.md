@@ -1,5 +1,4 @@
-# year-cohort-projectName
-project template repo
+# 2022-SurfingPenguines-Icepace
 
 Welcome to the Surfing Penguine's OOP Social Media App
 
