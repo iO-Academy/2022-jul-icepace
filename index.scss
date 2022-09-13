@@ -41,9 +41,11 @@ body{
     max-width: 200px;
     clip-path: circle(40% at 50% 50%);
     align-self: center;
+    object-fit:;
   }
   .cardUsernameText {
     align-self: center;
+    padding: 10px;
   }
 }
 

@@ -1,45 +1,17 @@
-* {
-  margin: 0;
-  font-family: "Trebuchet MS", sans-serif;
-  box-sizing: border-box;
-}
+/* Error: Expected expression.
+ *    ,
+ * 44 |     object-fit:;
+ *    |                ^
+ *    '
+ *   index.scss 44:16  root stylesheet */
 
-body {
-  background-color: #ECEFF8;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 44 \2502      object-fit:;\a    \2502                 ^\a    \2575 \a   index.scss 44:16  root stylesheet";
 }
-body nav {
-  background-color: #4F9CC8;
-  padding: 10px;
-  position: fixed;
-  width: 100vw;
-}
-body h1 {
-  padding-left: 10px;
-  color: white;
-}
-body .user-header {
-  padding: 15px;
-  position: relative;
-  padding-top: 70px;
-}
-body .userCard {
-  background-color: #9DBED4;
-  width: 400px;
-  border: solid 2px #4F9CC8;
-  padding: 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-body .avatarImg {
-  max-height: 200px;
-  max-width: 200px;
-  clip-path: circle(40% at 50% 50%);
-  align-self: center;
-}
-body .cardUsernameText {
-  align-self: center;
-}
-
-/*# sourceMappingURL=index.css.map */

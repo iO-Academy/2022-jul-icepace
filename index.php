@@ -1,5 +1,10 @@
 <?php
+
+use Icepace\UsersHydrator;
+
 require_once "vendor/autoload.php";
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$users = UsersHydrator::getAllUsers($db);
 
 //    $htmlOutput = '<div class="userCard">';
 //    $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
@@ -17,6 +22,7 @@ require_once "vendor/autoload.php";
     <title>Icepace</title>
 </head>
 <body>
+<<<<<<< HEAD
     <nav>
         <h1>Icepace</h1>
     </nav>
@@ -33,5 +39,7 @@ require_once "vendor/autoload.php";
             <p class='cardUsernameText'>TestUsername</p>
         </div>
     </div>
+=======
+>>>>>>> origin/s2t2-createPageLayout
 </body>
 </html>
