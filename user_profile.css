@@ -33,6 +33,8 @@
 .userProfileContainer .profileAvatarImg {
   margin: 50px;
   clip-path: circle(50% at 50% 50%);
+  height: 250px;
+  width: 250px;
 }
 
 /*# sourceMappingURL=user_profile.css.map */

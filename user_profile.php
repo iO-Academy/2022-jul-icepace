@@ -21,7 +21,7 @@
         <a href="index.php">< back to all users</a>
     </div>
     <div class="profileCard">
-        <img class="profileAvatarImg" src="https://via.placeholder.com/150"/>
+        <img class="profileAvatarImg" src="./assets/imgs/avatars/placeholder.jpg"/>
         <h1 class="usernameProfileText">Username</h1>
         <div class="bioText">
             <p>Hello, I am the one and only Mike Oram, student at iO Academy.
