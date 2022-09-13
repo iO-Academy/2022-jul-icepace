@@ -1,8 +1,8 @@
 <?php
+require_once "vendor/autoload.php";
 
 use Icepace\UserHydrator;
 
-require_once "vendor/autoload.php";
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $users = UserHydrator::getAllUsers($db);
 
@@ -20,10 +20,8 @@ $users = UserHydrator::getAllUsers($db);
     <nav>
         <h1>Icepace</h1>
     </nav>
-    <div class="allUserCardContainer">
-        <div>
-            <h2 class="user-header">All users</h2>
-        </div>
+    <div class="allUserCardsContainer">
+        <h2 class="user-header">All users</h2>
     <?php
       foreach ($users as $user){
           echo $user->createUserCardHtml();
