@@ -8,14 +8,13 @@ $main-background-color: #ECEFF8;
 
 $navbar-color: #4F9CC8;
 
-
-
 body{
   background-color: $main-background-color;
   nav {
     background-color: $navbar-color;
     padding: 10px;
     position: fixed;
+    width: 100vw;
     }
     h1{
       padding-left: 10px;
@@ -23,6 +22,27 @@ body{
     }
   .user-header {
     padding: 15px;
+    position: relative;
+    padding-top: 70px;
+  }
+  .userCard {
+    background-color: #9DBED4;
+    width: 400px;
+    border: solid 2px #4F9CC8;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .avatarImg {
+    max-height: 200px;
+    max-width: 200px;
+    clip-path: circle(40% at 50% 50%);
+    align-self: center;
+  }
+  .cardUsernameText {
+    align-self: center;
   }
 }
 
