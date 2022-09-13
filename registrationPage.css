@@ -1,0 +1,23 @@
+.registrationPageContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+  background: gray;
+}
+.registrationPageContainer .createUserIntro {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.registrationPageContainer .registrationForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 10px;
+  margin: 100px auto 0;
+}
+
+/*# sourceMappingURL=registrationPage.css.map */
