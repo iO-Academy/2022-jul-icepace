@@ -28,9 +28,10 @@ body{
   .userCard {
     background-color: #9DBED4;
     width: 400px;
+    max-height: 300px;
     border: solid 2px #4F9CC8;
-    padding: 10px;
-    margin: 0 auto;
+    //padding: 10px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
