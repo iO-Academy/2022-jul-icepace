@@ -14,7 +14,9 @@ require_once "vendor/autoload.php";
 </head>
 <body>
 <nav>
-    <h1>Icepace</h1>
+    <a class="homePageTitle" href="index.php">
+        <h1>Icepace</h1>
+    </a>
 </nav>
 <div class="formContainer">
     <div class="registrationPageContainer">
