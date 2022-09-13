@@ -1,6 +1,17 @@
 <?php
 require_once "vendor/autoload.php";
 
+function displayUsers(array $allUsers): string
+{
+    $allUsersOutputString = '<div class="allUserCardContainer">';
+
+    foreach ($allUsers as $user){
+        $allUsersOutputString .= $user->creatUserCardHtml();
+    }
+    $allUsersOutputString .= "</div>";
+    return $allUsersOutputString;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
