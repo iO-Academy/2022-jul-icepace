@@ -1,5 +1,6 @@
 <?php
-require_once 'vendor/autoload.php';
+namespace Icepace\Test;
+require_once '../vendor/autoload.php';
 use Icepace\User;
 use PHPUnit\Framework\TestCase;
 
