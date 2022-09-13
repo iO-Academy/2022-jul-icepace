@@ -10,6 +10,15 @@ class User
     protected string $avatar;
     protected string $hashed_pass;
 
+    /**
+     * This constructor is only to be used for unit testing purposes
+     *
+     * @param int $id example id for testing purposes
+     * @param string $username example username for testing purposes
+     * @param string $hashed_pass example hashed password for testing purposes
+     * @param string $bio example bio for testing purposes
+     * @param string $avatar example avatar for testing purposes
+     */
     public function __construct(int $id = 0, string $username = '', string $hashed_pass = '', string $bio = '', string $avatar = '')
     {
         $this->id = $id;
