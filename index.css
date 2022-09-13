@@ -39,10 +39,8 @@ body .allUserCardContainer .userCard {
   margin: 20px auto;
 }
 body .allUserCardContainer .userCard .avatarImg {
-  max-height: 150px;
-  max-width: 150px;
-  min-height: 150px;
-  min-width: 150px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   clip-path: circle(40% at 50% 50%);
   align-self: center;
