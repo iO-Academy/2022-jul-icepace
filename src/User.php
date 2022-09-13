@@ -25,8 +25,8 @@ class User
     public function createUserCardHtml(): string
     {
         $htmlOutput = '<div class="userCard">';
-        $htmlOutput .= '<img class="avatarImg" src="'$this->avatar'" alt="Profile Picture">';
-        $htmlOutput .= '<p class='cardUsernameText'>$this->username</p>';
+        $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput .= "<p class='cardUsernameText'>$this->username</p>";
         $htmlOutput .= '</div>';
         return $htmlOutput;
     }
