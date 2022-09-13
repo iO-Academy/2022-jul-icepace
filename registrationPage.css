@@ -2,9 +2,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 600px;
+  max-width: 450px;
+  width: 100%;
   margin: 0 auto;
-  background: gray;
+  background: #D1D8E2;
+  position: relative;
+  top: 100px;
+  border-radius: 25px;
 }
 .registrationPageContainer .createUserIntro {
   text-align: left;
@@ -15,9 +19,30 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 300px;
+  width: 300px;
   gap: 10px;
-  margin: 100px auto 0;
+  margin: 0 auto;
+}
+.registrationPageContainer .submitForm {
+  box-shadow: 0 0 0 2px #9fb4f2;
+  background: #7892c2 linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  border-radius: 10px;
+  border: 1px solid #7892c2;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #283966;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto;
+}
+.registrationPageContainer .submitForm:hover {
+  background: #476e9e linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+}
+.registrationPageContainer .createUserIntro {
+  text-align: center;
 }
 
 /*# sourceMappingURL=registrationPage.css.map */
