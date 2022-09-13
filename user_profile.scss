@@ -1,1 +1,22 @@
-@import 'index.css';
+@import './index.css';
+
+$text-color-black: #000000;
+
+.userProfileContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $text-color-black;
+  }
+  h1 {
+    color: $text-color-black;
+  }
+  .backToAllUsers {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

@@ -16,5 +16,17 @@
     <nav>
         <h1>Icepace</h1>
     </nav>
+    <div class="userProfileContainer">
+        <div class="backToAllUsers">
+            <a href="index.php">< back to all users</a>
+        </div>
+        <div class="profileCard">
+            <img class="profileAvatarImg"/>
+            <h1 class="usernameProfileText">Username</h1>
+            <p class="bioText">
+                Blablablablabla
+            </p>
+        </div>
+    </div>
 </body>
 </html>

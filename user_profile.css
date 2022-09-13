@@ -1,3 +1,21 @@
-@import 'index.css';
+@import './index.css';
+.userProfileContainer {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.userProfileContainer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.userProfileContainer h1 {
+  color: #000000;
+}
+.userProfileContainer .backToAllUsers {
+  display: flex;
+  justify-content: flex-start;
+}
 
 /*# sourceMappingURL=user_profile.css.map */
