@@ -6,11 +6,6 @@ require_once "vendor/autoload.php";
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $users = UserHydrator::getAllUsers($db);
 
-use Icepace\UserHydrator;
-
-$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
-$users = UserHydrator::getAllUsers($db);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

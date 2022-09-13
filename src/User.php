@@ -8,6 +8,7 @@ class User
     protected string $username;
     protected string $bio;
     protected string $avatar;
+    protected string $hashed_pass;
 
     public function __construct(int $id = 0, string $username = '', string $hashed_pass = '', string $bio = '', string $avatar = '')
     {
