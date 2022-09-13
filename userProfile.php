@@ -32,7 +32,7 @@ $user = UserHydrator::getUserByUsername($db, $username);
         <img class="profileAvatarImg" src="<? echo $user->getAvatar(); ?>" alt="Profile picture"/>
         <h1 class="usernameProfileText"><? echo $user->getUsername(); ?></h1>
         <div class="bioTextContainer">
-            <p> <? echo $user->getBio(); ?> </p>
+            <p><? echo nl2br($user->getBio(), $use_xhtml = true); ?></p>
         </div>
     </div>
 </div>
