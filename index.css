@@ -31,6 +31,9 @@ body .allUserCardsContainer .user-header {
   padding-top: 100px;
   text-align: left;
 }
+body .allUserCardsContainer .profileLink {
+  text-decoration: none;
+}
 body .allUserCardsContainer .userCard {
   display: flex;
   justify-content: center;
@@ -51,6 +54,7 @@ body .allUserCardsContainer .userCard .avatarImg {
 body .allUserCardsContainer .userCard .cardUsernameText {
   align-self: center;
   padding: 10px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */

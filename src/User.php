@@ -45,7 +45,7 @@ class User
 
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '<a href="./userProfile.php?username=' . $this->getUsername() . '">';
+        $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
         $htmlOutput .= '<div class="userCard">';
         $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
