@@ -2,14 +2,14 @@
 
 use Icepace\UsersHydrator;
 
-//require_once "vendor/autoload.php";
-//$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
-//$users = UsersHydrator::getAllUsers($db);
+require_once "vendor/autoload.php";
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$users = UsersHydrator::getAllUsers($db);
 
-//    $htmlOutput = '<div class="userCard">';
-//    $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
-//    $htmlOutput .= "<p class='cardUsernameText'>$this->username</p>";
-//    $htmlOutput .= '</div>'
+    $htmlOutput = '<div class="userCard">';
+    $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+    $htmlOutput .= "<p class='cardUsernameText'>$this->username</p>";
+    $htmlOutput .= '</div>'
 
 ?>
 <!DOCTYPE html>
