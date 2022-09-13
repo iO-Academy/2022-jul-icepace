@@ -1,3 +1,5 @@
 .DS_Store
 .idea
 vendor
+index.css
+index.css.map
