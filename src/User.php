@@ -5,13 +5,15 @@ require_once 'vendor/autoload.php';
 
 class User
 {
+    protected int $id;
     protected string $username;
     protected string $hashed_pass;
     protected string $bio;
     protected string $avatar;
 
-    public function __construct(string $username, string $hashed_pass, string $bio, string $avatar)
+    public function __construct(int $id, string $username, string $hashed_pass, string $bio, string $avatar)
     {
+        $this->id = $id;
         $this->username = $username;
         $this->avatar = $avatar;
         $this->bio = $bio;
