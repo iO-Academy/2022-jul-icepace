@@ -10,7 +10,7 @@ class UserTest extends TestCase
     {
         $user = new User(1,'fakeUsername', 'fakeHashedPass', 'fake bio', 'fakeAvatar.jpeg');
         $result = $user->createUserCardHtml();
-        $this->assertEquals('<div class="userCard"><img class="avatarImg" src="fakeAvatar.jpeg" alt="Profile Picture"><p class="' . "cardUsernameText" . '">fakeUsername</p></div>', $result);
+        $this->assertEquals('<div class="userCard"><img class="avatarImg" src="./assets/imgs/avatars/placeholder.jpg" alt="Profile Picture"><p class="' . "cardUsernameText" . '">fakeUsername</p></div>', $result);
     }
 
     public function testSuccessCreateUserCardHtml2()

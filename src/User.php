@@ -25,7 +25,7 @@ class User
 
     public function getAvatar(): string
     {
-        return $this->avatar;
+        return "./assets/imgs/avatars/" . $this->avatar;
     }
 
     public function getBio(): string

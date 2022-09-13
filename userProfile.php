@@ -29,7 +29,7 @@ $user = UserHydrator::getUserByUsername($db, $username);
         <a href="index.php">< back to all users</a>
     </div>
     <div class="profileCard">
-        <img class="profileAvatarImg" src="./assets/imgs/avatars/"<? ?>/>
+        <img class="profileAvatarImg" src="<? echo $user->getAvatar(); ?>" alt="Profile picture"/>
         <h1 class="usernameProfileText"><? echo $user->getUsername(); ?></h1>
         <div class="bioTextContainer">
             <p> <? echo $user->getBio(); ?> </p>
