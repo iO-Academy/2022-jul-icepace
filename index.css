@@ -41,6 +41,7 @@ body .allUserCardsContainer .userCard {
   background-color: #9DBED4;
   width: 100%;
   border: solid 2px #4F9CC8;
+  border-radius: 15px;
   padding-bottom: 10px;
   margin: 20px auto;
 }
