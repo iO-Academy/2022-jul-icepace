@@ -1,7 +1,6 @@
 <?php
 
 namespace Icepace;
-require_once 'vendor/autoload.php';
 
 class User
 {
@@ -10,7 +9,7 @@ class User
     protected string $bio;
     protected string $avatar;
 
-    public function __construct(int $id, string $username, string $hashed_pass, string $bio, string $avatar)
+    public function __construct(int $id = 0, string $username = '', string $hashed_pass = '', string $bio = '', string $avatar = '')
     {
         $this->id = $id;
         $this->username = $username;

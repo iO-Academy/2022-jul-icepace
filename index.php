@@ -6,21 +6,10 @@ require_once "vendor/autoload.php";
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $users = UserHydrator::getAllUsers($db);
 
-function displayUsers(array $allUsers): string
-{
-    $allUsersOutputString = '<div class="allUserCardContainer">';
+use Icepace\UserHydrator;
 
-    foreach ($allUsers as $user){
-        $allUsersOutputString .= $user->creatUserCardHtml();
-    }
-    $allUsersOutputString .= "</div>";
-    return $allUsersOutputString;
-}
-
-    $htmlOutput = '<div class="userCard">';
-    $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
-    $htmlOutput .= "<p class='cardUsernameText'>$this->username</p>";
-    $htmlOutput .= '</div>'
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$users = UserHydrator::getAllUsers($db);
 
 ?>
 <!DOCTYPE html>
@@ -40,14 +29,11 @@ function displayUsers(array $allUsers): string
         <div>
             <h2 class="user-header">All users</h2>
         </div>
-        <div class="userCard">
-            <img class="avatarImg" src="someguy.webp" alt="Profile Picture">
-            <p class='cardUsernameText'>TestUsername</p>
-        </div>
-        <div class="userCard">
-            <img class="avatarImg" src="peng.png" alt="Profile Picture">
-            <p class='cardUsernameText'>TestUsername</p>
-        </div>
+    <?php
+      foreach ($users as $user){
+          echo $user->createUserCardHtml();
+      }
+    ?>
     </div>
 </body>
 </html>
