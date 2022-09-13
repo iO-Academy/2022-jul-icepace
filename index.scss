@@ -1,0 +1,83 @@
+$main-background-color: #ECEFF8;
+
+$navbar-color: #4F9CC8;
+
+$card-background-color: #9DBED4;
+
+@mixin centering-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $main-background-color;
+  nav {
+    background-color: $navbar-color;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    }
+  .homePageTitle {
+    text-decoration: none;
+  }
+  .signUp {
+    padding: 20px 7px;
+    margin: 0 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #000000;
+  }
+  .signUp:hover {
+    background-color: #476e9e;
+    color: #ffffff;
+  }
+    h1{
+      padding: 15px 0px 15px 10px;
+      color: white;
+    }
+  .allUserCardContainer {
+    @include centering-container;
+    width: 350px;
+    margin: 0 auto;
+    .user-header {
+      padding-top: 100px;
+      text-align: left;
+    }
+    .userCard {
+      @include centering-container;
+      background-color: $card-background-color;
+      width: 350px;
+      border: solid 2px #4F9CC8;
+      padding-bottom: 10px;
+      margin: 20px auto;
+      .avatarImg {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        clip-path: circle(40% at 50% 50%);
+        align-self: center;
+      }
+      .cardUsernameText {
+        align-self: center;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+
