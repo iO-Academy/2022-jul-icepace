@@ -23,7 +23,7 @@
     <div class="profileCard">
         <img class="profileAvatarImg" src="./assets/imgs/avatars/placeholder.jpg"/>
         <h1 class="usernameProfileText">Username</h1>
-        <div class="bioText">
+        <div class="bioTextContainer">
             <p>Hello, I am the one and only Mike Oram, student at iO Academy.
 
                 I have many interests including coding, philosophy, politics, Magic the Gathering, Dungeons and Dragons, spicy Reddit discussions, gardening, burritos, coding, philosophy, politics, Magic the Gathering, Dungeons and Dragons, spicy Reddit discussions, gardening, burritos, and many more. I care a lot about the environment and about making the world a better place for everyone.

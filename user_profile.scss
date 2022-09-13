@@ -2,6 +2,7 @@
 
 $text-color-black: #000000;
 $background-color-text: #D1D8E2;
+$breakpoint-desktop: 750px;
 
 .userProfileContainer {
   padding: 50px 10px 0 10px;
@@ -17,6 +18,7 @@ $background-color-text: #D1D8E2;
   .backToAllUsers {
     display: flex;
     justify-content: flex-start;
+    padding: 10px;
   }
   .profileCard {
     display: flex;
@@ -24,14 +26,14 @@ $background-color-text: #D1D8E2;
     padding-top: 5px;
     align-items: center;
   }
-  .bioText {
+  .bioTextContainer {
     border: 1px solid #D1D8E2;
     border-radius: 15px;
     background-color: $background-color-text;
-    width: 90%;
+    max-width: 600px;
     overflow-wrap: break-word;
     padding: 10px;
-    margin-top: 50px;
+    margin: 50px 10px 0 10px;
   }
   .profileAvatarImg {
     margin: 50px;
@@ -40,3 +42,4 @@ $background-color-text: #D1D8E2;
     width: 250px;
   }
 }
+
