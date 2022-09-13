@@ -1,13 +1,21 @@
+$main-background-color: #ECEFF8;
+
+$navbar-color: #4F9CC8;
+
+$card-background-color: #9DBED4;
+$text-color-black: #000000;
+
+@mixin centering-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   font-family: "Trebuchet MS", sans-serif;
   box-sizing: border-box;
 }
-
-$main-background-color: #ECEFF8;
-$navbar-color: #4F9CC8;
-$text-color-black: #000000;
-
 
 body{
   background-color: $main-background-color;

@@ -1,11 +1,22 @@
 <?php
 
+namespace Icepace;
+
 class User
 {
+    protected int $id;
     protected string $username;
-    protected string $hashed_pass;
     protected string $bio;
     protected string $avatar;
+
+    public function __construct(int $id = 0, string $username = '', string $hashed_pass = '', string $bio = '', string $avatar = '')
+    {
+        $this->id = $id;
+        $this->username = $username;
+        $this->avatar = $avatar;
+        $this->bio = $bio;
+        $this->hashed_pass = $hashed_pass;
+    }
 
     public function getUsername(): string
     {
@@ -22,14 +33,12 @@ class User
         return $this->bio;
     }
 
-    public function getHashedPass(): string
-    {
-        return $this->hashed_pass;
-    }
-
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '';
+        $htmlOutput = '<div class="userCard">';
+        $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
+        $htmlOutput .= '</div>';
         return $htmlOutput;
     }
 }

@@ -1,4 +1,12 @@
 <?php
+use Icepace\UsersHydrator;
+
+require_once "vendor/autoload.php";
+
+$id = 1;
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$user = UsersHydrator::getUserById($db, $id);
+
 
 ?>
 
@@ -32,8 +40,8 @@
             </p>
         </div>
     </div>
-    </p>
 </div>
 </div>
+<? print_r($user); ?>
 </body>
 </html>
