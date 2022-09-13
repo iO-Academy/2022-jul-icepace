@@ -16,7 +16,6 @@ class User
         $this->avatar = $avatar;
         $this->bio = $bio;
         $this->hashed_pass = $hashed_pass;
-
     }
 
     public function getUsername(): string

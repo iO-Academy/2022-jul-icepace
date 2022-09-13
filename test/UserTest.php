@@ -1,21 +1,19 @@
 <?php
 
-
 use Icepace\User;
 use PHPUnit\Framework\TestCase;
 require_once 'vendor/autoload.php';
 
-
 class UserTest extends TestCase
 {
-    public function testSuccessCreateUserCardHtml()
+    public function testSuccessCreateUserCardHtml1()
     {
         $user = new User('fakeUsername', 'fakeHashedPass', 'fake bio', 'fakeAvatar.jpeg');
         $result = $user->createUserCardHtml();
         $this->assertEquals('<div class="userCard"><img class="avatarImg" src="fakeAvatar.jpeg" alt="Profile Picture"><p class="' . "cardUsernameText" . '">fakeUsername</p></div>', $result);
     }
 
-    public function testMalformedCreateUserCardHtml()
+    public function testSuccessCreateUserCardHtml2()
     {
         $user = new User(5, 'fakeHashedPass', 'fake bio', 3);
         $result = $user->createUserCardHtml();
