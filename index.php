@@ -1,16 +1,10 @@
 <?php
 require_once "vendor/autoload.php";
 
-function displayUsers(array $allUsers): string
-{
-    $allUsersOutputString = '<div class="allUserCardContainer">';
+use Icepace\UserHydrator;
 
-    foreach ($allUsers as $user){
-        $allUsersOutputString .= $user->creatUserCardHtml();
-    }
-    $allUsersOutputString .= "</div>";
-    return $allUsersOutputString;
-}
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$users = UserHydrator::getAllUsers($db);
 
 ?>
 <!DOCTYPE html>
@@ -23,6 +17,12 @@ function displayUsers(array $allUsers): string
     <title>Icepace</title>
 </head>
 <body>
-
+<div class="allUserCardContainer">
+    <?php
+    foreach ($users as $user){
+        echo $user->createUserCardHtml();
+    }
+    ?>
+</div>
 </body>
 </html>
