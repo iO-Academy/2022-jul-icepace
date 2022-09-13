@@ -3,7 +3,6 @@
 class User
 {
     protected string $username;
-    protected string $hashed_pass;
     protected string $bio;
     protected string $avatar;
 
@@ -20,11 +19,6 @@ class User
     public function getBio(): string
     {
         return $this->bio;
-    }
-
-    public function getHashedPass(): string
-    {
-        return $this->hashed_pass;
     }
 
     public function createUserCardHtml(): string
