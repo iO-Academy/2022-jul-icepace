@@ -18,20 +18,19 @@ require_once "vendor/autoload.php";
 </nav>
 <div class="formContainer">
     <div class="registrationPageContainer">
-            <form class="registrationForm">
-                <h1 class="createUserIntro">
-                    Create user
-                </h1>
-                <label for="usernameInput">Username</label>
-                <input type="text" name="usernameInput" class="usernameInput" id="usernameInput" placeholder="Username"/>
-                <label for="passwordInput">Password</label>
-                <input type="password" name="passwordInput" class="passwordInput" id="passwordInput" placeholder="Password"/>
-                <label for="bioInput">Bio</label>
-                <textarea name="bioInput" class="bioInput" id="bioInput" rows="10" placeholder="Enter your bio here..."></textarea>
-                <input class="submitForm" type="submit" value="Join Icepace!">
-            </form>
+        <form class="registrationForm">
+            <h1 class="createUserIntro">
+                Create user
+            </h1>
+            <label for="usernameInput">Username</label>
+            <input type="text" name="usernameInput" class="usernameInput" id="usernameInput" placeholder="Username"/>
+            <label for="passwordInput">Password</label>
+            <input type="password" name="passwordInput" class="passwordInput" id="passwordInput" placeholder="Password"/>
+            <label for="bioInput">Bio</label>
+            <textarea name="bioInput" class="bioInput" id="bioInput" rows="10" placeholder="Enter your bio here..."></textarea>
+            <input class="submitForm" type="submit" value="Join Icepace!">
+        </form>
     </div>
 </div>
-
 </body>
 </html>
