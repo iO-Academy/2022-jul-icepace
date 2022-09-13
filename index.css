@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECEFF8;
+}
+body nav {
+  background-color: #4F9CC8;
+  padding: 10px;
+  position: fixed;
+  width: 100vw;
+}
+body h1 {
+  padding: 15px 0px 15px 10px;
+  color: white;
+}
+body .allUserCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+}
+body .allUserCardContainer .user-header {
+  padding-top: 100px;
+  text-align: left;
+}
+body .allUserCardContainer .userCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9DBED4;
+  width: 350px;
+  border: solid 2px #4F9CC8;
+  padding-bottom: 10px;
+  margin: 20px auto;
+}
+body .allUserCardContainer .userCard .avatarImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  align-self: center;
+}
+body .allUserCardContainer .userCard .cardUsernameText {
+  align-self: center;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -6,7 +6,6 @@ class User
 {
     protected int $id;
     protected string $username;
-    protected string $hashed_pass;
     protected string $bio;
     protected string $avatar;
 
