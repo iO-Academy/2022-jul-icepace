@@ -16,9 +16,9 @@ class UserTest extends TestCase
 
     public function testSuccessGetSanitizedBio()
     {
-        $user = new User(1,'fakeUsername', 'fakeHashedPass', 'Hello! <p> Welcome </p> <p>This is my icepace</p> <img src="https://media1.giphy.com/media/Vuw9m5wXviFIQ/200w.gif" />', 'fakeAvatar.jpeg');
+        $user = new User(1,'fakeUsername', 'fakeHashedPass', 'Hello! <img src="https://media1.giphy.com/media/Vuw9m5wXviFIQ/200w.gif" />', 'fakeAvatar.jpeg');
         $result = $user->getSanitizedBio();
-        $expected = 'Hello!  Welcome  This is my icepace ';
+        $expected = 'Hello! ';
         $this->assertEquals($expected, $result);
     }
 
