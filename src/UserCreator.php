@@ -25,7 +25,7 @@ class UserCreator
     {
         $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
     }
-    
+
     public static function sanitiseBio($bio)
     {
         $bio = filter_input(INPUT_POST, 'bio', FILTER_SANITIZE_STRING);
