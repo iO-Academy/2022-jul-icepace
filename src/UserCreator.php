@@ -12,14 +12,23 @@ class UserCreator
     const BIO_REQUIRED = 'Please enter a your bio';
     const BIO_INVALID = 'Please enter a valid bio';
 
-    public static function validateInput(): bool
+    public static function validateInput($username, $password, $bio): bool
     {
         $errorArray = [];
-        $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
         $errorArray['username'] = self::validateUsername($username);
         $errorArray['password'] = self::validatePassword($password);
         $errorArray['bio'] = self::validateBio($bio);
         return empty($errorArray);
+    }
+
+    public static function sanitiseUsername($username)
+    {
+        $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
+    }
+    
+    public static function sanitiseBio($bio)
+    {
+        $bio = filter_input(INPUT_POST, 'bio', FILTER_SANITIZE_STRING);
     }
 
     private static function validateUsername(string $username): string
