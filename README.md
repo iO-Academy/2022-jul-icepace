@@ -1,4 +1,4 @@
-# 2022-SurfingPenguin's-Icepace
+# Icepace - made by the Surfing Penguins 2022
 
 ## Description
 Welcome to the Surfing Penguins Object-orientated PHP project, styled with SASS, that fetches and displays information about cool icespace users.
