@@ -3,8 +3,7 @@ require_once "vendor/autoload.php";
 
 use Icepace\UserCreator;
 
-$newUser = new \Icepace\User(12, );
-
+$newUser = new \Icepace\User();
 UserCreator::insertUserIntoDb($newUser);
 ?>
 
