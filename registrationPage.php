@@ -1,5 +1,8 @@
 <?php
 require_once "vendor/autoload.php";
+
+use Icepace\UserCreator;
+
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +21,7 @@ require_once "vendor/autoload.php";
 </nav>
 <div class="formContainer">
     <div class="registrationPageContainer">
-        <form class="registrationForm">
+        <form class="registrationForm" method="post" action="UserCreator.php">
             <h1 class="createUserIntro">
                 Create user
             </h1>
