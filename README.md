@@ -11,10 +11,10 @@
 
 
 ### Created by:
-[George](https://github.com/Georgeoak03)
-[Harry](https://github.com/Harry-Johnston)
-[Jo](https://github.com/JVLoe)
-[Josh](https://github.com/JoshuaBennet)
-[Mike](https://github.com/SlothSan)
-[Nico](https://github.com/nico-dev-it)
-[Tom](https://github.com/timyop)
+- [George](https://github.com/Georgeoak03)
+- [Harry](https://github.com/Harry-Johnston)
+- [Jo](https://github.com/JVLoe)
+- [Josh](https://github.com/JoshuaBennet)
+- [Mike](https://github.com/SlothSan)
+- [Nico](https://github.com/nico-dev-it)
+- [Tom](https://github.com/timyop)
