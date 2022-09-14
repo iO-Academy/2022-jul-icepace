@@ -1,5 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ require_once "vendor/autoload.php";
 </nav>
 <div class="formContainer">
     <div class="registrationPageContainer">
-        <form class="registrationForm">
+        <form class="registrationForm" method="post" action="createNewUser.php">
             <h1 class="createUserIntro">
                 Create user
             </h1>

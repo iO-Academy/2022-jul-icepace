@@ -34,6 +34,11 @@ class User
         return $this->bio;
     }
 
+    public function getHashedPass(): string
+    {
+        return $this->hashed_pass;
+    }
+
     public function createUserCardHtml(): string
     {
         $htmlOutput = '<div class="userCard">';
