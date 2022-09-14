@@ -1,5 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
+
 use Icepace\UserHydrator;
 
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
