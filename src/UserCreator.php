@@ -6,7 +6,7 @@ use PDO;
 
 class UserCreator
 {
-    function addToDb(array $newUser)
+    function insertUserIntoDb(array $newUser)
     {
         $username = $newUser['username'];
         $password = $newUser['hashed_pass'];
@@ -20,6 +20,5 @@ class UserCreator
     VALUES (:username, :hashed_pass, :bio)';
         $query = $db->prepare($queryString);
         $query->execute (['username' => $username, 'hashed_pass' => $password, 'bio' => $bio]);
-        return
     }
 }
