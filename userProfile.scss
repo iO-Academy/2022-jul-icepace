@@ -1,7 +1,7 @@
 @import './index.css';
 
 $text-color-black: #000000;
-$background-color-text: #D1D8E2;
+$background-bio: #D1D8E2;
 
 .userProfileContainer {
   padding: 90px 10px 50px 10px;
@@ -27,7 +27,7 @@ $background-color-text: #D1D8E2;
   .bioTextContainer {
     border: 1px solid #D1D8E2;
     border-radius: 15px;
-    background-color: $background-color-text;
+    background-color: $background-bio;
     max-width: 600px;
     overflow-wrap: break-word;
     padding: 10px;
