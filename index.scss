@@ -21,7 +21,8 @@ body{
   nav {
     background-color: $navbar-color;
     padding: 10px;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100vw;
     z-index: 10;
     }
@@ -35,7 +36,7 @@ body{
     margin: 0 auto;
     padding: 30px;
     .user-header {
-      padding-top: 100px;
+      padding-top: 10px;
       text-align: left;
     }
     .profileLink {
