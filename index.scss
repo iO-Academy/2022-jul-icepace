@@ -1,8 +1,7 @@
 $main-background-color: #ECEFF8;
-
 $navbar-color: #4F9CC8;
-
 $card-background-color: #9DBED4;
+$text-color-black: #000000;
 
 @mixin centering-container {
   display: flex;
@@ -16,13 +15,15 @@ $card-background-color: #9DBED4;
   box-sizing: border-box;
 }
 
-body {
+body{
   background-color: $main-background-color;
+  font-size: 16px;
   nav {
     background-color: $navbar-color;
     padding: 10px;
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
     z-index: 10;
     }
     h1 {
@@ -33,10 +34,13 @@ body {
     @include centering-container;
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     .user-header {
-      padding-top: 100px;
+      padding-top: 10px;
       text-align: left;
+    }
+    .profileLink {
+      text-decoration: none;
     }
     .userCard {
       @include centering-container;
@@ -55,11 +59,8 @@ body {
       .cardUsernameText {
         align-self: center;
         padding: 10px;
+        color: $text-color-black;
       }
     }
   }
 }
-
-
-
-

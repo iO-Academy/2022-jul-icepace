@@ -33,22 +33,24 @@ class User
         return $this->username;
     }
 
-    public function getAvatar(): string
+    public function getFullAvatarPath(): string
     {
-        return $this->avatar;
+        return "./assets/imgs/avatars/" . $this->avatar;
     }
 
-    public function getBio(): string
+    public function getSanitizedBio(): string
     {
-        return $this->bio;
+        $bioStripped = strip_tags($this->bio);
+        return str_replace("\n", '<br />', $bioStripped);
     }
 
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '<div class="userCard">';
-        $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
+        $htmlOutput .= '<div class="userCard">';
+        $htmlOutput .= '<img class="avatarImg" src="' . $this->getFullAvatarPath() . '" alt="Profile picture" />';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
-        $htmlOutput .= '</div>';
+        $htmlOutput .= '</div></a>';
         return $htmlOutput;
     }
 }
