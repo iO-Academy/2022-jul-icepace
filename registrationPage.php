@@ -1,10 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
 
-use Icepace\UserCreator;
-
-$newUser = new \Icepace\User();
-UserCreator::insertUserIntoDb($newUser);
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +19,7 @@ UserCreator::insertUserIntoDb($newUser);
 </nav>
 <div class="formContainer">
     <div class="registrationPageContainer">
-        <form class="registrationForm" method="post" action="UserCreator.php">
+        <form class="registrationForm" method="post" action="createNewUser.php">
             <h1 class="createUserIntro">
                 Create user
             </h1>
