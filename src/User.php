@@ -40,7 +40,8 @@ class User
 
     public function getSanitizedBio(): string
     {
-        return nl2br(strip_tags($this->bio), $use_xhtml = true);
+        $bioStripped = strip_tags($this->bio);
+        return str_replace("\n", '<br />', $bioStripped);
     }
 
     public function createUserCardHtml(): string

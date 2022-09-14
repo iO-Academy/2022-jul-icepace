@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {
-    public function testSuccessCreateUserCardHtml1()
+    public function testSuccessCreateUserCardHtml()
     {
         $user = new User(1,'fakeUsername', 'fakeHashedPass', 'fake bio', 'fakeAvatar.jpeg');
         $result = $user->createUserCardHtml();
@@ -16,9 +16,9 @@ class UserTest extends TestCase
 
     public function testSuccessGetSanitizedBio()
     {
-        $user = new User(1,'fakeUsername', 'fakeHashedPass', 'Hello! <img src="https://media1.giphy.com/media/Vuw9m5wXviFIQ/200w.gif" />', 'fakeAvatar.jpeg');
+        $user = new User(1,'fakeUsername', 'fakeHashedPass', "Hello! \n World<img src='https://media1.giphy.com/media/Vuw9m5wXviFIQ/200w.gif' />", 'fakeAvatar.jpeg');
         $result = $user->getSanitizedBio();
-        $expected = 'Hello! ';
+        $expected = 'Hello! <br /> World';
         $this->assertEquals($expected, $result);
     }
 
