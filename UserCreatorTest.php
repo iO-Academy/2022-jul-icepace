@@ -9,7 +9,8 @@ class UserCreatorTest extends TestCase
 {
     public function testSuccessSanitiseUsername()
     {
-        $input = ' gre'
+        $input = ' gr@y!2 ';
+        $expect
 
     }
 }
