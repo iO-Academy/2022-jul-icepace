@@ -12,6 +12,31 @@ body nav {
   padding: 10px;
   position: fixed;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+body .homePageTitle {
+  text-decoration: none;
+}
+body .signUp {
+  padding: 20px 7px;
+  margin: 0 20px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+body .signUp:hover {
+  background-color: #476e9e;
+  color: #ffffff;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }
 body h1 {
   padding: 15px 0px 15px 10px;

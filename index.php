@@ -1,9 +1,7 @@
 <?php
-
+require_once "vendor/autoload.php";
 use Icepace\UserHydrator;
 
-
-require_once "vendor/autoload.php";
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $users = UserHydrator::getAllUsers($db);
 
@@ -19,7 +17,10 @@ $users = UserHydrator::getAllUsers($db);
 </head>
 <body>
     <nav>
-        <h1>Icepace</h1>
+        <a class="homePageTitle" href="index.php">
+            <h1>Icepace</h1>
+        </a>
+        <a class="signUp" href="registrationPage.php">sign up</a>
     </nav>
     <div class="allUserCardContainer">
         <div>

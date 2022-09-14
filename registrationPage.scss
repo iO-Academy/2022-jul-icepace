@@ -28,26 +28,30 @@
     margin: 0 auto;
   }
   .submitForm {
-    box-shadow: 0 0 0 2px #9fb4f2;
-    background: #7892c2 linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-    border-radius: 10px;
-    border: 1px solid #7892c2;
-    cursor: pointer;
-    color: #ffffff;
+    background: #339DFF;
+    color: #fff;
     text-decoration: none;
-    text-shadow: 0 1px 0 #283966;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    transition: all 0.3s;
     width: 150px;
     height: 40px;
     text-align: center;
     margin: 20px auto;
+    border-width: 0;
+  }
+  .homePageTitle {
+    text-decoration: none;
   }
   .submitForm:hover {
-    background: #476e9e linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
   }
   .createUserIntro {
     text-align: center;
   }
 }
-
 
 
