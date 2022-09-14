@@ -44,10 +44,10 @@ Run your SASS compliler with the following commands:
 The application will now be available whereever you access it, bask in the coolness!
 
 ### Created by:
-- George [@Georgeoak03](https://github.com/Georgeoak03)
-- Harry [@Harry-Johnston](https://github.com/Harry-Johnston)
-- Jo [@JVLoe](https://github.com/JVLoe)
-- Josh [@JoshuaBennet](https://github.com/JoshuaBennet)
-- Mike [@SlothSan](https://github.com/SlothSan)
-- Nico [@nico-dev-it](https://github.com/nico-dev-it)
-- Tim [@timyop](https://github.com/timyop)
+- George Oakley [@Georgeoak03](https://github.com/Georgeoak03)
+- Harry Johnston [@Harry-Johnston](https://github.com/Harry-Johnston)
+- Jo Loe [@JVLoe](https://github.com/JVLoe)
+- Josh Bennet [@JoshuaBennet](https://github.com/JoshuaBennet)
+- Mike Oram [@SlothSan](https://github.com/SlothSan)
+- Nico Herbreteau [@nico-dev-it](https://github.com/nico-dev-it)
+- Tom Hughes [@timyop](https://github.com/timyop)
