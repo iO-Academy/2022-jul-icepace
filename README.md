@@ -1,7 +1,7 @@
 # 2022-SurfingPenguin's-Icepace
 
 ## Description
-Welcome to the Surfing Penguine's Object-orientated PHP project, styled with SASS, that fetches and displays information about cool icespace users.
+Welcome to the Surfing Penguins Object-orientated PHP project, styled with SASS, that fetches and displays information about cool icespace users.
 
 Upon selecting a user you can view the users bio and learn about how cool they are, nice !
 
