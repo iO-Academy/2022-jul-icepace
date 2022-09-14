@@ -6,29 +6,29 @@ namespace Icepace;
 class UserCreator
 {
     const NAME_REQUIRED = 'Please enter your name';
-    const NAME_TAKEN = 'Please enter a unique name';
+    const NAME_TAKEN = 'Someone already has this username! Please enter a unique one';
     const PASSWORD_REQUIRED = 'Please enter a your password';
-    const PASSWORD_INVALID = 'Please enter a valid password';
+    const PASSWORD_INVALID = 'Your password is shorter than 8 characters';
     const BIO_REQUIRED = 'Please enter a your bio';
-    const BIO_INVALID = 'Please enter a valid bio';
+    const BIO_INVALID = 'Your bio is longer than 2000 characters';
 
-    public static function validateInput($username, $password, $bio): bool
+    public static function validateInput($username, $password, $bio): array
     {
         $errorArray = [];
         $errorArray['username'] = self::validateUsername($username);
         $errorArray['password'] = self::validatePassword($password);
         $errorArray['bio'] = self::validateBio($bio);
-        return empty($errorArray);
+        return $errorArray;
     }
 
-    public static function sanitiseUsername($username)
+    public static function sanitiseUsername(string $username): string
     {
-        $username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
+        return trim(filter_input(INPUT_POST, $username, FILTER_SANITIZE_STRING));
     }
 
-    public static function sanitiseBio($bio)
+    public static function sanitiseBio(string $bio): string
     {
-        $bio = filter_input(INPUT_POST, 'bio', FILTER_SANITIZE_STRING);
+        return filter_input(INPUT_POST, $bio, FILTER_SANITIZE_STRING);
     }
 
     private static function validateUsername(string $username): string
@@ -64,7 +64,11 @@ class UserCreator
     private static function isUsernameUnique(string $username): bool
     {
         $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
-        $usersArray = UserHydrator::getAllUsers($db);
+        try{
+            $usersArray = UserHydrator::getAllUsers($db);
+        } catch (Exception $e) {
+            echo '<p>Your connection to the database failed =-(</p>';
+        }
         foreach ($usersArray as $user) {
             $existingUsername = $user->getUsername();
             if ($existingUsername === $username) {
