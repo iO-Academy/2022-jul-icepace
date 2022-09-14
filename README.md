@@ -44,7 +44,7 @@ Run your SASS compliler with the following commands:
   sass --watch userProfile.scss:userProfile.css
 ```
   
-The application will now be available whereever you access it, bask in the coolness!
+Providing you're running the PHP server, the application will now be available, bask in the coolness!
 
 ### Created by:
 - George Oakley [@Georgeoak03](https://github.com/Georgeoak03)
