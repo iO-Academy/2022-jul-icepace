@@ -47,7 +47,7 @@ class User
     {
         $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
         $htmlOutput .= '<div class="userCard">';
-        $htmlOutput .= '<img class="avatarImg" src="./assets/imgs/avatars/' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput .= '<img class="avatarImg" src="' . $this->getFullAvatarPath() . '" alt="Profile picture" />';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
         $htmlOutput .= '</div></a>';
         return $htmlOutput;
