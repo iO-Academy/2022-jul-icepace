@@ -13,7 +13,7 @@ class UserHydrator
         $query->execute();
         return $query->fetchAll();
     }
- 
+
     public static function getUserByUsername(PDO $db, string $username): User
     {
         $query = $db->prepare('SELECT `id`, `username`, `hashed_pass`, `bio`, `avatar` FROM `users` WHERE `username`= ?');
