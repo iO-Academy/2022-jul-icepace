@@ -19,4 +19,11 @@ class UserTest extends TestCase
         $result = $user->getSanitizedBio();
         $this->assertEquals('', $result);
     }
+
+    public function testSuccessGetFullAvatarPath()
+    {
+        $user = new User(1,'fakeUsername', 'fakeHashedPass', 'fake bio', 'fakeAvatar.jpeg');
+        $result = $user->getFullAvatarPath();
+        $this->assertEquals("./assets/imgs/avatars/fakeAvatar.jpeg", $result);
+    }
 }

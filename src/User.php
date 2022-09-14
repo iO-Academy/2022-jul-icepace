@@ -33,7 +33,7 @@ class User
         return $this->username;
     }
 
-    public function getAvatar(): string
+    public function getFullAvatarPath(): string
     {
         return "./assets/imgs/avatars/" . $this->avatar;
     }
