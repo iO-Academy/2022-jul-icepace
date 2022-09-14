@@ -1,4 +1,11 @@
 <?php
+use Icepace\UserHydrator;
+
+require_once "vendor/autoload.php";
+
+$username = $_GET['username'];
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$user = UserHydrator::getUserByUsername($db, $username);
 
 ?>
 
@@ -21,15 +28,10 @@
         <a href="index.php">< back to all users</a>
     </div>
     <div class="profileCard">
-        <img class="profileAvatarImg" src="./assets/imgs/avatars/placeholder.jpg"/>
-        <h1 class="usernameProfileText">Username</h1>
+        <img class="profileAvatarImg" src="<? echo $user->getAvatar(); ?>" alt="Profile picture"/>
+        <h1 class="usernameProfileText"><? echo $user->getUsername(); ?></h1>
         <div class="bioTextContainer">
-            <p>Hello, I am the one and only Mike Oram, student at iO Academy.
-
-                I have many interests including coding, philosophy, politics, Magic the Gathering, Dungeons and Dragons, spicy Reddit discussions, gardening, burritos, coding, philosophy, politics, Magic the Gathering, Dungeons and Dragons, spicy Reddit discussions, gardening, burritos, and many more. I care a lot about the environment and about making the world a better place for everyone.
-
-                When it comes to coding, I'm more of a backend guy, but I have been known to dedicate many hours to CSS styling for the greater benefit of the team. I look forward to coding more code in the near future, hopefully less CSS!
-            </p>
+            <p><? echo nl2br($user->getSanitizedBio(), $use_xhtml = true); ?></p>
         </div>
     </div>
 </div>

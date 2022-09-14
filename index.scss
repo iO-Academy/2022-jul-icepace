@@ -1,9 +1,7 @@
-
 $main-background-color: #ECEFF8;
-
 $navbar-color: #4F9CC8;
-
 $card-background-color: #9DBED4;
+$text-color-black: #000000;
 
 @mixin centering-container {
   display: flex;
@@ -40,6 +38,9 @@ body{
       padding-top: 100px;
       text-align: left;
     }
+    .profileLink {
+      text-decoration: none;
+    }
     .userCard {
       @include centering-container;
       background-color: $card-background-color;
@@ -57,6 +58,7 @@ body{
       .cardUsernameText {
         align-self: center;
         padding: 10px;
+        color: $text-color-black;
       }
     }
   }

@@ -35,20 +35,21 @@ class User
 
     public function getAvatar(): string
     {
-        return $this->avatar;
+        return "./assets/imgs/avatars/" . $this->avatar;
     }
 
-    public function getBio(): string
+    public function getSanitizedBio(): string
     {
-        return $this->bio;
+        return strip_tags($this->bio);
     }
 
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '<div class="userCard">';
-        $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
+        $htmlOutput .= '<div class="userCard">';
+        $htmlOutput .= '<img class="avatarImg" src="./assets/imgs/avatars/' . $this->avatar . '" alt="Profile Picture">';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
-        $htmlOutput .= '</div>';
+        $htmlOutput .= '</div></a>';
         return $htmlOutput;
     }
 }
