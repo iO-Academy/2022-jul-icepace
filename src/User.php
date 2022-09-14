@@ -49,7 +49,7 @@ class User
         $htmlOutput .= '<div class="userCard">';
         $htmlOutput .= '<img class="avatarImg" src="./assets/imgs/avatars/' . $this->avatar . '" alt="Profile Picture">';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
-        $htmlOutput .= '</div>';
+        $htmlOutput .= '</div></a>';
         return $htmlOutput;
     }
 }

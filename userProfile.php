@@ -7,7 +7,6 @@ $username = $_GET['username'];
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
 $user = UserHydrator::getUserByUsername($db, $username);
 
-
 ?>
 
 <!DOCTYPE html>
