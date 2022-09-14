@@ -2,7 +2,9 @@
 
 namespace Icepace;
 
+use Exception;
 use PDO;
+use TypeError;
 
 class UserHydrator
 {

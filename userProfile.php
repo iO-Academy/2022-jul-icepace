@@ -5,7 +5,13 @@ require_once "vendor/autoload.php";
 
 $username = $_GET['username'];
 $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
-$user = UserHydrator::getUserByUsername($db, $username);
+try {
+    $user = UserHydrator::getUserByUsername($db, $username);
+} catch (TypeError $e) {
+    header('Location:index.php');
+}
+
+
 
 ?>
 
