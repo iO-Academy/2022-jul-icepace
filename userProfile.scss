@@ -2,7 +2,6 @@
 
 $text-color-black: #000000;
 $background-color-text: #D1D8E2;
-$breakpoint-desktop: 750px;
 
 .userProfileContainer {
   padding: 50px 10px 0 10px;
@@ -32,8 +31,8 @@ $breakpoint-desktop: 750px;
     background-color: $background-color-text;
     max-width: 600px;
     overflow-wrap: break-word;
-    padding: 10px 10px 50px;
-    margin: 50px 10px 0 10px;
+    padding: 10px;
+    margin: 30px 10px 0 10px;
   }
   .profileAvatarImg {
     margin: 50px;

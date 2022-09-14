@@ -38,9 +38,9 @@ class User
         return "./assets/imgs/avatars/" . $this->avatar;
     }
 
-    public function getBio(): string
+    public function getSanitizedBio(): string
     {
-        return $this->bio;
+        return strip_tags($this->bio);
     }
 
     public function createUserCardHtml(): string
