@@ -1,20 +1,53 @@
 # 2022-SurfingPenguin's-Icepace
 
-## Welcome to the Surfing Penguine's OOP Social Media App
+##Description
+Welcome to the Surfing Penguine's Object-orientated PHP project, styled with SASS, that fetches and displays information about cool icespace users.
 
-### How to setup the project for editing:
-1. Clone the repo
-2. Run your SASS compiler (sass --watch index.scss:index.css) & (sass --watch userProfile.scss:userProfile.css)
-3. Run the PSR-4 autoloader (composer dump-autoload)
-4. Import the database (within the db folder)
-5. Have fun!
+Upon selecting a user you can view the users bio and learn about how cool they are, nice !
 
+##Dependencies
+
+- PHP version 7.4.30
+- MySQL version 5.5.5
+- Composer version 2.4.1
+- PHPUnit version 9.5.21
+- SASS version 1.49
+
+##Installing 
+
+Clone this repo:
+
+  https://github.com/iO-Academy/2022-jul-icepace.git
+  
+Navigate into the newly created repo:
+
+  cd 2022-jul-icepace
+  
+From the root of the project run 
+  
+  Composer dump-autoload
+  
+Install the database `icepace.sql` into a db named icepace
+
+Ensure yoour local database host, username and password details are correct in: 
+
+  index.php
+  
+  UserProfile.php 
+  
+Run your SASS compliler with the following commands:
+  
+  sass --watch index.scss:index.css
+  
+  sass --watch userProfile.scss:userProfile.css
+  
+The application will now be available whereever you access it, bask in the coolness!
 
 ### Created by:
-- [George](https://github.com/Georgeoak03)
-- [Harry](https://github.com/Harry-Johnston)
-- [Jo](https://github.com/JVLoe)
-- [Josh](https://github.com/JoshuaBennet)
-- [Mike](https://github.com/SlothSan)
-- [Nico](https://github.com/nico-dev-it)
-- [Tom](https://github.com/timyop)
+- [@Georgeoak03](https://github.com/Georgeoak03)
+- [@Harry-Johnston](https://github.com/Harry-Johnston)
+- [@JVLoe](https://github.com/JVLoe)
+- [@JoshuaBennet](https://github.com/JoshuaBennet)
+- [@SlothSan](https://github.com/SlothSan)
+- [@nico-dev-it](https://github.com/nico-dev-it)
+- [@timyop](https://github.com/timyop)
