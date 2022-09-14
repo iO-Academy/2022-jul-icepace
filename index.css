@@ -30,10 +30,13 @@ body .signUp {
   text-decoration: none;
   font-family: "Trebuchet MS", sans-serif;
   color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 body .signUp:hover {
   background-color: #476e9e;
   color: #ffffff;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }
 body h1 {
   padding: 15px 0px 15px 10px;
