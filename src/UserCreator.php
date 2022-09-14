@@ -14,9 +14,9 @@ class UserCreator
 
     }
 
-    private static function validatePassword()
+    private static function validatePassword(string $password): bool
     {
-
+        return strlen($password) > 8;
     }
 
     private static function validateBio()
