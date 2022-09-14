@@ -4,7 +4,7 @@ $text-color-black: #000000;
 $background-color-text: #D1D8E2;
 
 .userProfileContainer {
-  padding: 50px 10px 0 10px;
+  padding: 90px 10px 50px 10px;
   a {
     text-decoration: none;
     font-weight: bold;
@@ -17,7 +17,6 @@ $background-color-text: #D1D8E2;
   .backToAllUsers {
     display: flex;
     justify-content: flex-start;
-    padding: 40px 10px;
   }
   .profileCard {
     display: flex;
