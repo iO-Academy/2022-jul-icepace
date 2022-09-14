@@ -1,11 +1,11 @@
 # 2022-SurfingPenguin's-Icepace
 
-##Description
+## Description
 Welcome to the Surfing Penguine's Object-orientated PHP project, styled with SASS, that fetches and displays information about cool icespace users.
 
 Upon selecting a user you can view the users bio and learn about how cool they are, nice !
 
-##Dependencies
+## Dependencies
 
 - PHP version 7.4.30
 - MySQL version 5.5.5
@@ -13,7 +13,7 @@ Upon selecting a user you can view the users bio and learn about how cool they a
 - PHPUnit version 9.5.21
 - SASS version 1.49
 
-##Installing 
+## Installing 
 
 Clone this repo:
 
@@ -44,10 +44,10 @@ Run your SASS compliler with the following commands:
 The application will now be available whereever you access it, bask in the coolness!
 
 ### Created by:
-- [@Georgeoak03](https://github.com/Georgeoak03)
-- [@Harry-Johnston](https://github.com/Harry-Johnston)
-- [@JVLoe](https://github.com/JVLoe)
-- [@JoshuaBennet](https://github.com/JoshuaBennet)
-- [@SlothSan](https://github.com/SlothSan)
-- [@nico-dev-it](https://github.com/nico-dev-it)
-- [@timyop](https://github.com/timyop)
+- George [@Georgeoak03](https://github.com/Georgeoak03)
+- Harry [@Harry-Johnston](https://github.com/Harry-Johnston)
+- Jo [@JVLoe](https://github.com/JVLoe)
+- Josh [@JoshuaBennet](https://github.com/JoshuaBennet)
+- Mike [@SlothSan](https://github.com/SlothSan)
+- Nico [@nico-dev-it](https://github.com/nico-dev-it)
+- Tim [@timyop](https://github.com/timyop)
