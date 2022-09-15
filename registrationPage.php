@@ -10,6 +10,7 @@ if(isset($_SESSION['errors'])){
     $username_error = '<p class="errorMessage">' . $_SESSION['errors']['username'] . '</p>';
     $password_error = '<p class="errorMessage">' . $_SESSION['errors']['password'] . '</p>';
     $bio_error = '<p class="errorMessage">' .  $_SESSION['errors']['bio'] . '</p>';
+    unset($_SESSION['errors']);
 }
 ?>
 
@@ -37,13 +38,13 @@ if(isset($_SESSION['errors'])){
             </h1>
             <label for="usernameInput">Username</label>
             <?php echo $username_error ?>
-            <input type="text" name="usernameInput" class="usernameInput" id="usernameInput" placeholder="Username"/>
+            <input type="text" name="usernameInput" class="usernameInput" id="usernameInput" placeholder="Username" required/>
             <label for="passwordInput">Password</label>
             <?php echo $password_error ?>
-            <input type="password" name="passwordInput" class="passwordInput" id="passwordInput" placeholder="Password"/>
+            <input type="password" name="passwordInput" class="passwordInput" id="passwordInput" minlength="8" placeholder="Password" required/>
             <label for="bioInput">Bio</label>
             <?php echo $bio_error ?>
-            <textarea name="bioInput" class="bioInput" id="bioInput" rows="10" placeholder="Enter your bio here..."></textarea>
+            <textarea name="bioInput" class="bioInput" id="bioInput" rows="10" maxlength="2000" placeholder="Enter your bio here..." required></textarea>
             <input class="submitForm" type="submit" value="Join Icepace!">
         </form>
     </div>
