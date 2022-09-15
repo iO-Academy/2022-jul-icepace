@@ -46,7 +46,7 @@ if(isset($_SESSION['errors'])){
             <label for="bioInput">Bio</label>
             <?php echo $bio_error ?>
             <textarea name="bioInput" class="bioInput" id="bioInput" rows="10" maxlength="2000" placeholder="Enter your bio here..." required></textarea>
-            <input class="submitForm" type="submit" value="Join Icepace!">
+            <input class="submitFormButton" type="submit" value="Join Icepace!">
         </form>
     </div>
 </div>
