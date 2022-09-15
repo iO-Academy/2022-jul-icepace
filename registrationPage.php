@@ -1,5 +1,6 @@
 <?php
 require_once "vendor/autoload.php";
+session_start();
 
 ?>
 
@@ -26,6 +27,7 @@ require_once "vendor/autoload.php";
                 Create user
             </h1>
             <label for="usernameInput">Username</label>
+            <?php echo $username_error ??= $_SESSION['errors']['username'] ?>
             <input type="text" name="usernameInput" class="usernameInput" id="usernameInput" placeholder="Username"/>
             <label for="passwordInput">Password</label>
             <input type="password" name="passwordInput" class="passwordInput" id="passwordInput" placeholder="Password"/>
