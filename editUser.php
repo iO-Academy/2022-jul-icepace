@@ -36,7 +36,7 @@ try {
     </div>
 </nav>
 <div class="editPageContainer">
-    <div class="loginPageFormContainer">
+    <div class="editPageFormContainer">
         <h2 class="loginTitle">Edit profile</h2>
         <form class="editForm" action="">
             <h2 class="radioTextInfo">Select an avatar from the options below.</h2>

@@ -41,21 +41,35 @@ body{
     clip-path: circle(40% at 50% 50%);
     align-self: center;
   }
+  .editPageFormContainer {
+    background-color: #D1D8E2;
+    width: 100%;
+    height: 600px;
+    max-width: 450px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 10px;
+  }
   h2 {
     text-align: center;
   }
   .radioTopContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .radioBottomContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
-  .avatarSelectRadio {
-    
+  .radioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .bioContainer {
+    display: flex;
+    flex-direction: column;
   }
   .navButton {
     padding: 20px 7px;
