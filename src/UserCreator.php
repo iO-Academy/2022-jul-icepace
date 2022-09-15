@@ -54,12 +54,14 @@ class UserCreator
     public static function insertUserIntoDb(string $username, string $password, string $bio, PDO $db): array
     {
         $placeholderAvatar = 'placeholder.jpg';
+
+        $username = self::sanitiseUsername($username);
+        $bio = self::sanitiseBio($bio);
+
         $result['errors']['username'] = self::validateUsername($username);
         $result['errors']['password'] = self::validatePassword($password);
         $result['errors']['bio'] = self::validateBio($bio);
 
-        $username = self::sanitiseUsername($username);
-        $bio = self::sanitiseBio($bio);
         $hashed_pass = password_hash($password, PASSWORD_BCRYPT);
 
         if (!$result['errors']['username'] && !$result['errors']['password'] && !$result['errors']['bio']) {
