@@ -1,5 +1,15 @@
 <?php
- $user
+use Icepace\UserHydrator;
+
+require_once "vendor/autoload.php";
+$username = 'timyop';
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+try {
+    $user = UserHydrator::getUserByUsername($db, $username);
+} catch (TypeError $e) {
+    header('Location:index.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +62,7 @@
             </div>
             <div class="bioContainer">
                 <label for="bio">Bio</label>
-                <textarea id="bio"></textarea>
+                <textarea id="bio"><? echo $user->getBio() ?></textarea>
             </div>
 
             <div class="inputContainer">
