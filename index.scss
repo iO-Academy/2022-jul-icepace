@@ -37,14 +37,13 @@ body{
   .placeholderPhoto {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    clip-path: circle(40% at 50% 50%);
+    border-radius: 50%;
     align-self: center;
   }
   .editPageFormContainer {
     background-color: #D1D8E2;
     width: 100%;
-    height: 650px;
+    height: 730px;
     max-width: 450px;
     border-radius: 25px;
     margin: 20px auto;
@@ -54,6 +53,7 @@ body{
     justify-content: center;
   }
   h2 {
+    padding-top: 5px;
     text-align: center;
   }
   .radioTopContainer {
@@ -70,14 +70,21 @@ body{
     display: flex;
     flex-direction: column;
   }
+  .avatarSelectRadio {
+    margin: 10px;
+  }
   .bioContainer {
     display: flex;
     flex-direction: column;
   }
   #bio {
-    height: 100px;
+    height: 150px;
     padding: 10px;
     margin: 5px 0;
+  }
+  .inputContainer {
+    display: flex;
+    align-items: center;
   }
   .submitForm {
     background: #FFFFFF;
