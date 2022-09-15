@@ -3,6 +3,9 @@
 $background-login: #D1D8E2;
 $background-login-button: #339DFF;
 $color-white: #ffffff;
+$hover-login-button-shadow: #5364FF51;
+
+
 
 .loginPageContainer {
   padding: 100px 20px 50px 20px;
@@ -44,7 +47,7 @@ $color-white: #ffffff;
     &:hover {
       background: #fff;
       color: #339DFF;
-      box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+      box-shadow: 0 4px 4px $hover-login-button-shadow;
     }
   }
 }
