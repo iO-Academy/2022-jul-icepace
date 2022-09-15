@@ -8,7 +8,7 @@ require_once "vendor/autoload.php";
 
 class LoginUser
 {
-    public function checkingUserExists(PDO $db)
+    public static function checkingUserExists(PDO $db)
     {
         try {
             if (isset($_POST['login'])) {
@@ -23,7 +23,7 @@ class LoginUser
                 header('Location:login.php');
             }
     }
-    public function logInUser($result)
+    public static function logInUser($result)
     {
         $userPassword = $_POST['passwordInput'];
         $hashedPassword = password_hash($userPassword, PASSWORD_BCRYPT);
