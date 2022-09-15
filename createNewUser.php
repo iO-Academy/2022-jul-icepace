@@ -17,11 +17,14 @@ if (isset($_POST['usernameInput']) && isset($_POST['passwordInput']) && isset($_
     } else {
         //WE ARE HERE -> RESULTS ARRAY IS PASSED CORRECTLY HOWEVER NOT BEING ASSIGNED TO _SESSION
         $_SESSION['errors'] = $result['errors'];
-        $test = var_dump($result);
+//        var_dump($result);
+//        var_dump($_SESSION);
+        header('Location: registrationPage.php');
+
 //        header("Location: $test");
     }
 } else {
-    header('Location: google.com');
+    header('Location: registrationPage.php');
 }
 
 ?>

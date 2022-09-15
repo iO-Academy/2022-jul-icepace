@@ -8,9 +8,9 @@ class UserCreator
 {
     const NAME_REQUIRED = 'Please enter your name';
     const NAME_TAKEN = 'Someone already has this username! Please enter a unique one';
-    const PASSWORD_REQUIRED = 'Please enter a your password';
+    const PASSWORD_REQUIRED = 'Please enter your password';
     const PASSWORD_INVALID = 'Your password is shorter than 8 characters';
-    const BIO_REQUIRED = 'Please enter a your bio';
+    const BIO_REQUIRED = 'Please enter your bio';
     const BIO_INVALID = 'Your bio is longer than 2000 characters';
 
     private static function sanitiseUsername(string $username): string
@@ -53,7 +53,7 @@ class UserCreator
 
     public static function insertUserIntoDb(string $username, string $password, string $bio, PDO $db): array
     {
-        $placeholderAvatar = 'placeholder.jpeg';
+        $placeholderAvatar = 'placeholder.jpg';
         $result['errors']['username'] = self::validateUsername($username);
         $result['errors']['password'] = self::validatePassword($password);
         $result['errors']['bio'] = self::validateBio($bio);
@@ -62,7 +62,7 @@ class UserCreator
         $bio = self::sanitiseBio($bio);
         $hashed_pass = password_hash($password, PASSWORD_BCRYPT);
 
-        if ($result['errors']['username'] === null && $result['errors']['password'] === null && $result['errors']['bio'] === null) {
+        if (!$result['errors']['username'] && !$result['errors']['password'] && !$result['errors']['bio']) {
             $queryString = 'INSERT INTO  `users` (`username`, `hashed_pass`, `bio`, `avatar`) 
         VALUES (:username, :hashed_pass, :bio, :avatar)';
             $query = $db->prepare($queryString);

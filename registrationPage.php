@@ -8,11 +8,10 @@ $bio_error = '';
 
 if(isset($_SESSION['errors'])){
     // double question mark is a ternary that ALSO does an isset() function
-    $username_error ??= $_SESSION['errors']['username'];
-    $password_error ??= $_SESSION['errors']['password'];
-    $bio_error ??= $_SESSION['errors']['bio'];
+    $username_error = $_SESSION['errors']['username'];
+    $password_error = $_SESSION['errors']['password'];
+    $bio_error = $_SESSION['errors']['bio'];
 }
-
 ?>
 
 <!DOCTYPE html>
