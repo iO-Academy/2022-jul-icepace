@@ -29,16 +29,33 @@
     <div class="loginPageFormContainer">
         <h2 class="loginTitle">Edit profile</h2>
         <form class="editForm" action="">
-            <div class="inputContainer">
-                <label class="inputLabel" for="usernameInput">Username</label>
-                <input type-="text" class="usernameInput" id="usernameInput" />
+            <div class="radioTopContainer">
+                <div class="radioContainer">
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder.jpg" />
+                </div>
+                <div class="radioContainer">
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder2.jpg" />
+                </div>
             </div>
-            <div class="inputContainer">
-                <label class="inputLabel" for="passwordInput">Password</label>
-                <input type-="password" class="passwordInput" id="passwordInput" />
+            <div class="radioBottomContainer">
+                <div class="radioContainer">
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder3.jpg" />
+                </div>
+                <div class="radioContainer">
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder4.jpg" />
+                </div>
             </div>
+            <div class="bioContainer">
+                <label for="bio">Bio</label>
+                <textarea id="bio"></textarea>
+            </div>
+
             <div class="inputContainer">
-            <input class="submitForm" type="submit" value="Login to Icepace!">
+            <input class="submitForm" type="submit" value="Submit Changes!">
             </div>
         </form>
     </div>
