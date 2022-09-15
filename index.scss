@@ -14,21 +14,6 @@ $text-color-black: #000000;
   font-family: "Trebuchet MS", sans-serif;
   box-sizing: border-box;
 }
-.navButton {
-  padding: 20px 7px;
-  margin: 0 20px;
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  font-size: 0.9rem;
-  text-decoration: none;
-  font-family: "Trebuchet MS", sans-serif;
-  color: #000000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
 body{
   background-color: $main-background-color;
@@ -55,6 +40,26 @@ body{
     display: block;
     width: 60px;
     height: 60px;
+    background-color: #eceff8;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #4f9cc8;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .signUp:hover {
+    background-color: #476e9e;
+    color: #ffffff;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  }
+  .navButton {
+    padding: 20px 7px;
+    margin: 0 20px;
+    display: block;
+    width: 60px;
+    height: 60px;
     background-color: #ffffff;
     border-radius: 50%;
     font-size: 0.9rem;
@@ -64,10 +69,10 @@ body{
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .signUp:hover {
-    background-color: #476e9e;
-    color: #ffffff;
-    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  .navBarButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
     h1{
       padding: 15px 0px 15px 10px;

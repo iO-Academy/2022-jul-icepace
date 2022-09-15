@@ -27,9 +27,14 @@ try {
 </head>
 <body>
 <nav>
-    <h1>Icepace</h1>
-    <a class="navButton" href="login.php">Login</a>
-    <a class="navButton" href="">Logout</a>
+    <a class="homePageTitle" href="index.php">
+        <h1>Icepace</h1>
+    </a>
+    <div class="navBarButton">
+        <a class="navButton" href="login.php">Login</a>
+        <a class="navButton" href="">Logout</a>
+        <a class="signUp" href="registrationPage.php">Sign up</a>
+    </div>
 </nav>
 <div class="userProfileContainer">
     <div class="backToAllUsers">
