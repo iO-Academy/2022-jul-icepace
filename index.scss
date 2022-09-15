@@ -34,6 +34,81 @@ body{
   .homePageTitle {
     text-decoration: none;
   }
+  .placeholderPhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+  }
+  .editPageFormContainer {
+    background-color: #D1D8E2;
+    width: 100%;
+    height: 730px;
+    max-width: 450px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    padding-top: 5px;
+    text-align: center;
+  }
+  .radioTextInfo {
+    text-align: center;
+    margin: 10px;
+  }
+  .radioTopContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .radioBottomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .radioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .avatarSelectRadio {
+    margin: 10px;
+  }
+  .bioContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #bio {
+    height: 150px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .inputContainer {
+    display: flex;
+    align-items: center;
+  }
+  .submitForm {
+    background: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    border-width: 0;
+    &:hover {
+      background: #339DFF;
+      color: #FFFFFF;
+      box-shadow: 0 4px 4px #5364FF51;
+    }
+  }
   .navButton {
     padding: 20px 7px;
     margin: 0 5px;

@@ -44,6 +44,11 @@ class User
         return str_replace("\n", '<br />', $bioStripped);
     }
 
+    public function getBio(): string
+    {
+        return $this->bio;
+    }
+
     public function getHashedPass(): string
     {
         return $this->hashed_pass;

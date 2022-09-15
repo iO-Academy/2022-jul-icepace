@@ -24,6 +24,81 @@ body h1 {
 body .homePageTitle {
   text-decoration: none;
 }
+body .placeholderPhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  align-self: center;
+}
+body .editPageFormContainer {
+  background-color: #D1D8E2;
+  width: 100%;
+  height: 730px;
+  max-width: 450px;
+  border-radius: 25px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body h2 {
+  padding-top: 5px;
+  text-align: center;
+}
+body .radioTextInfo {
+  text-align: center;
+  margin: 10px;
+}
+body .radioTopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .radioBottomContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .radioContainer {
+  display: flex;
+  flex-direction: column;
+}
+body .avatarSelectRadio {
+  margin: 10px;
+}
+body .bioContainer {
+  display: flex;
+  flex-direction: column;
+}
+body #bio {
+  height: 150px;
+  padding: 10px;
+  margin: 5px 0;
+}
+body .inputContainer {
+  display: flex;
+  align-items: center;
+}
+body .submitForm {
+  background: #FFFFFF;
+  color: #000000;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 38px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto;
+  border-width: 0;
+}
+body .submitForm:hover {
+  background: #339DFF;
+  color: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.3176470588);
+}
 body .navButton {
   padding: 20px 7px;
   margin: 0 5px;
