@@ -34,6 +34,29 @@ body{
   .homePageTitle {
     text-decoration: none;
   }
+  .placeholderPhoto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    clip-path: circle(40% at 50% 50%);
+    align-self: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .radioTopContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .radioBottomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .avatarSelectRadio {
+    
+  }
   .navButton {
     padding: 20px 7px;
     margin: 0 5px;

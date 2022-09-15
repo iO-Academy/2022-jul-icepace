@@ -29,8 +29,8 @@
     <div class="loginPageFormContainer">
         <h2 class="loginTitle">Edit profile</h2>
         <form class="editForm" action="">
+            <h2 class="radioTextInfo">Select an avatar from the options below.</h2>
             <div class="radioTopContainer">
-                <h2 class="radioTextInfo">Select an avatar from the options below.</h2>
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
                     <input type="radio" class="avatarSelectRadio" value="placeholder.jpg" />

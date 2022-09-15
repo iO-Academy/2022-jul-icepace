@@ -24,6 +24,26 @@ body h1 {
 body .homePageTitle {
   text-decoration: none;
 }
+body .placeholderPhoto {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  align-self: center;
+}
+body h2 {
+  text-align: center;
+}
+body .radioTopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .radioBottomContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 body .navButton {
   padding: 20px 7px;
   margin: 0 5px;
