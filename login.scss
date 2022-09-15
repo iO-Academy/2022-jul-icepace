@@ -1,10 +1,9 @@
 @import './index.scss';
 
 $background-login: #D1D8E2;
-$background-login-button: #339DFF;
-$color-white: #ffffff;
+$background-login-button: #FFFFFF;
+$text-color-black: #000000;
 $hover-login-button-shadow: #5364FF51;
-
 
 
 .loginPageContainer {
@@ -33,7 +32,7 @@ $hover-login-button-shadow: #5364FF51;
   }
   .submitForm {
     background: $background-login-button;
-    color: $color-white;
+    color: $text-color-black;
     text-decoration: none;
     font-size: 13px;
     line-height: 38px;
@@ -45,8 +44,8 @@ $hover-login-button-shadow: #5364FF51;
     margin: 20px auto;
     border-width: 0;
     &:hover {
-      background: #fff;
-      color: #339DFF;
+      background: #339DFF;
+      color: #FFFFFF;
       box-shadow: 0 4px 4px $hover-login-button-shadow;
     }
   }

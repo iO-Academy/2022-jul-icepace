@@ -17,8 +17,10 @@
     <a class="homePageTitle" href="index.php">
         <h1>Icepace</h1>
     </a>
-    <a class="navButton" href="login.php">Login</a>
-    <a class="navButton" href="">Logout</a>
+    <div class="navBarButton">
+        <a class="navButton" href="login.php">Login</a>
+        <a class="navButton" href="">Logout</a>
+    </div>
 </nav>
 <div class="loginPageContainer">
     <div class="loginPageFormContainer">

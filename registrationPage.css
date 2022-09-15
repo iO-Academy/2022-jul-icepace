@@ -25,13 +25,12 @@
   margin: 0 auto;
 }
 .registrationPageContainer .submitForm {
-  background: #339DFF;
-  color: #fff;
+  background: #FFFFFF;
+  color: #000000;
   text-decoration: none;
   font-size: 13px;
   line-height: 38px;
   border-radius: 50px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 150px;
   height: 40px;
@@ -43,8 +42,8 @@
   text-decoration: none;
 }
 .registrationPageContainer .submitForm:hover {
-  background: #fff;
-  color: #339DFF;
+  background: #339DFF;
+  color: #FFFFFF;
   box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
 }
 .registrationPageContainer .createUserIntro {
