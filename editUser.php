@@ -64,7 +64,6 @@ try {
                 <label for="bio">Bio</label>
                 <textarea id="bio"><? echo $user->getBio() ?></textarea>
             </div>
-
             <div class="inputContainer">
             <input class="submitForm" type="submit" value="Submit Changes!">
             </div>
