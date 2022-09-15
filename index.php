@@ -19,6 +19,8 @@ $users = UserHydrator::getAllUsers($db);
 <body>
     <nav>
         <h1>Icepace</h1>
+        <a class="navButton" href="login.php">Login</a>
+        <a class="navButton" href="">Logout</a>
     </nav>
     <div class="allUserCardsContainer">
         <h2 class="user-header">All users</h2>

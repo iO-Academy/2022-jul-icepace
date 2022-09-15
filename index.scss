@@ -14,6 +14,21 @@ $text-color-black: #000000;
   font-family: "Trebuchet MS", sans-serif;
   box-sizing: border-box;
 }
+.navButton {
+  padding: 20px 7px;
+  margin: 0 20px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
 body{
   background-color: $main-background-color;
@@ -64,3 +79,4 @@ body{
     }
   }
 }
+

@@ -28,6 +28,8 @@ try {
 <body>
 <nav>
     <h1>Icepace</h1>
+    <a class="navButton" href="login.php">Login</a>
+    <a class="navButton" href="">Logout</a>
 </nav>
 <div class="userProfileContainer">
     <div class="backToAllUsers">
