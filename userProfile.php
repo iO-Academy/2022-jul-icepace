@@ -43,8 +43,13 @@ try {
     </div>
 </nav>
 <div class="userProfileContainer">
-    <div class="backToAllUsers">
-        <a href="index.php">< back to all users</a>
+    <div class="topButtonContainer">
+        <div class="backToAllUsers">
+            <a href="index.php">< back to all users</a>
+        </div>
+        <div class="editProfileButton">
+            <a class="editProfileButtonLink" href="index.php">Edit Profile</a>
+        </div>
     </div>
     <div class="profileCard">
         <img class="profileAvatarImg" src="<? echo $user->getFullAvatarPath(); ?>" alt="Profile picture"/>

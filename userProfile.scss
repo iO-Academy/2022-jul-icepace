@@ -35,5 +35,18 @@ $background-bio: #D1D8E2;
     height: 250px;
     width: 250px;
   }
+  .editProfileButton{
+    text-align: center;
+    background-color: $navbar-color;
+    width: 150px;
+  }
+  .editProfileButtonLink{
+    font-size: 1.2rem;
+  }
+  .topButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
