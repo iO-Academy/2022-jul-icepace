@@ -26,7 +26,7 @@ class UserCreator
     private static function validateUsername(string $username): ?string
     {
         if ($username === '') {
-            return UserCreator::USERNAME_REQUIRED;
+            return self::USERNAME_REQUIRED;
         }
         return null;
     }
@@ -34,9 +34,9 @@ class UserCreator
     private static function validatePassword(string $password): ?string
     {
         if ($password === '') {
-            return UserCreator::PASSWORD_REQUIRED;
+            return self::PASSWORD_REQUIRED;
         } elseif (strlen($password) < 8) {
-            return UserCreator::PASSWORD_INVALID;
+            return self::PASSWORD_INVALID;
         }
         return null;
     }
@@ -44,9 +44,9 @@ class UserCreator
     private static function validateBio(string $bio): ?string
     {
         if ($bio === '') {
-            return UserCreator::BIO_REQUIRED;
+            return self::BIO_REQUIRED;
         } elseif (strlen($bio) > 2000) {
-            return UserCreator::BIO_INVALID;
+            return self::BIO_INVALID;
         }
         return null;
     }
