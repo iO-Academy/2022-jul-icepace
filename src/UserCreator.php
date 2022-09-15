@@ -34,8 +34,6 @@ class UserCreator
     {
         if ($username === '') {
             $errorString = UserCreator::NAME_REQUIRED;
-        } elseif (!self::isUsernameUnique($username)) {
-            $errorString = UserCreator::NAME_TAKEN;
         }
         return $errorString;
     }
@@ -60,33 +58,22 @@ class UserCreator
         return $errorString;
     }
 
-    private static function isUsernameUnique(string $username): bool
-    {
-        $db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
-        try{
-            $usersArray = UserHydrator::getAllUsers($db);
-        } catch (Exception $e) {
-            echo '<p>Your connection to the database failed =-(</p>';
-        }
-        foreach ($usersArray as $user) {
-            $existingUsername = $user->getUsername();
-            if ($existingUsername === $username) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public static function insertUserIntoDb($username, $password, $bio)
     {
         $connectionString = 'mysql:host=db; dbname=icepace';
         $dbUsername = 'root';
         $dbPassword = 'password';
         $db = new PDO($connectionString, $dbUsername, $dbPassword);
+        $errorArray = [];
+
+        $username = self::sanitiseUsername($username);
+        $bio = self::sanitiseBio($bio);
+        $errorArray =self::validateInput($username, $password, $bio);
+        $hashed_pass = password_hash($password, PASSWORD_BCRYPT);
 
         $queryString = 'INSERT INTO  `users` (`username`, `hashed_pass`, `bio`) 
         VALUES (:username, :hashed_pass, :bio)';
         $query = $db->prepare($queryString);
-        $query->execute(['username' => $username, 'hashed_pass' => $password, 'bio' => $bio]);
+        $query->execute(['username' => $username, 'hashed_pass' => $hashed_pass, 'bio' => $bio]);
     }
 }
