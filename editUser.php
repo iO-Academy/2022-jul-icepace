@@ -39,7 +39,7 @@ try {
     <div class="editPageFormContainer">
         <h2 class="loginTitle">Edit profile</h2>
         <form class="editForm" action="">
-            <h2 class="radioTextInfo">Select an avatar from the options below.</h2>
+            <p class="radioTextInfo">Select an avatar from the options below.</p>
             <div class="radioTopContainer">
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />

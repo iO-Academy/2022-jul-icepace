@@ -46,6 +46,10 @@ body h2 {
   padding-top: 5px;
   text-align: center;
 }
+body .radioTextInfo {
+  text-align: center;
+  margin: 10px;
+}
 body .radioTopContainer {
   display: flex;
   flex-direction: row;
