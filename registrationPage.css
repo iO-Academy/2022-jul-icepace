@@ -1,0 +1,54 @@
+.registrationPageContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  background: #D1D8E2;
+  position: relative;
+  top: 100px;
+  border-radius: 25px;
+}
+.registrationPageContainer .createUserIntro {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.registrationPageContainer .registrationForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 300px;
+  width: 300px;
+  gap: 10px;
+  margin: 0 auto;
+}
+.registrationPageContainer .submitForm {
+  background: #339DFF;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 38px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin: 20px auto;
+  border-width: 0;
+}
+.registrationPageContainer .homePageTitle {
+  text-decoration: none;
+}
+.registrationPageContainer .submitForm:hover {
+  background: #fff;
+  color: #339DFF;
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+.registrationPageContainer .createUserIntro {
+  text-align: center;
+}
+
+/*# sourceMappingURL=registrationPage.css.map */
