@@ -14,12 +14,10 @@
   top: 100px;
   border-radius: 25px;
   .createUserIntro {
-
     text-align: left;
     font-size: 1.5rem;
     color: #000000;
   }
-
   .registrationForm {
     @include centering-container;
     max-width: 300px;
