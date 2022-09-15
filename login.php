@@ -1,5 +1,10 @@
 <?php
 
+use Icepace\LoginUser;
+
+$db = new PDO('mysql:host=db; dbname=icepace', 'root', 'password');
+$loginUser = LoginUser::checkUserExists($db);
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +34,7 @@
 <div class="loginPageContainer">
     <div class="loginPageFormContainer">
         <h2 class="loginTitle">Login</h2>
-        <form class="loginForm" action="">
+        <form class="loginForm" action="LoginUser.php">
             <div class="inputContainer">
                 <label class="inputLabel" for="usernameInput">Username</label>
                 <input type-="text" class="usernameInput" id="usernameInput" />
