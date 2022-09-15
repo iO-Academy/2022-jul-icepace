@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECEFF8;
+  font-size: 16px;
+}
+body nav {
+  background-color: #4F9CC8;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+body h1 {
+  padding: 15px 0 15px 10px;
+}
+body .homePageTitle {
+  text-decoration: none;
+}
+body .navButton {
+  padding: 20px 7px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s;
+  text-align: center;
+  line-height: 20px;
+}
+body .navBarButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+body .buttonContainer {
+  background-image: url("./assets/imgs/snowball.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  width: 70px;
+  height: 60px;
+  font-size: 40px;
+  margin: 0 5px;
+}
+body h1 {
+  padding: 15px 0 15px 10px;
+  color: #FFFFFF;
+}
+body .allUserCardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+}
+body .allUserCardsContainer .user-header {
+  padding-top: 10px;
+  text-align: left;
+}
+body .allUserCardsContainer .profileLink {
+  text-decoration: none;
+}
+body .allUserCardsContainer .userCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9DBED4;
+  width: 100%;
+  border: solid 2px #4F9CC8;
+  padding-bottom: 10px;
+  margin: 20px auto;
+}
+body .allUserCardsContainer .userCard .avatarImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  align-self: center;
+}
+body .allUserCardsContainer .userCard .cardUsernameText {
+  align-self: center;
+  padding: 10px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=index.css.map */

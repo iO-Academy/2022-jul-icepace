@@ -25,10 +25,45 @@ body{
     top: 0;
     width: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
     }
     h1 {
       padding: 15px 0 15px 10px;
-      color: white;
+    }
+  .homePageTitle {
+    text-decoration: none;
+  }
+  .navButton {
+    padding: 20px 7px;
+    margin: 0 5px;
+    display: block;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 20px;
+  }
+  .navBarButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .buttonContainer {
+    background-image: url("./assets/imgs/snowball.png");
+    background-size: cover;
+    border-radius: 50%;
+    display: block;
+    width: 70px;
+    height: 60px;
+    font-size: 40px;
+    margin: 0 5px;
+  }
+    h1{
+      padding: 15px 0 15px 10px;
+      color: #FFFFFF;
     }
   .allUserCardsContainer {
     @include centering-container;
@@ -64,3 +99,4 @@ body{
     }
   }
 }
+

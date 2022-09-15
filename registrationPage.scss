@@ -1,0 +1,55 @@
+@mixin centering-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.registrationPageContainer {
+  @include centering-container;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  background: #D1D8E2;
+  position: relative;
+  top: 100px;
+  border-radius: 25px;
+  .createUserIntro {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  .registrationForm {
+    @include centering-container;
+    max-width: 300px;
+    width: 300px;
+    gap: 10px;
+    margin: 0 auto;
+  }
+  .submitForm {
+    background: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    border-width: 0;
+  }
+  .homePageTitle {
+    text-decoration: none;
+  }
+  .submitForm:hover {
+    background: #339DFF;
+    color: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+  }
+  .createUserIntro {
+    text-align: center;
+  }
+}
+
+
