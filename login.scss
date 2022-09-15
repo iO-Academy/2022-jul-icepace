@@ -1,1 +1,28 @@
 @import './index.scss';
+
+$background-login: #D1D8E2;
+
+.loginPageContainer {
+  padding: 100px 20px 50px 20px;
+  @include centering-container;
+
+}
+
+.loginPageFormContainer {
+  background-color: $background-login;
+  width: 100%;
+  height: 450px;
+  max-width: 450px;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.loginTitle {
+  text-align: center;
+  padding: 15px;
+}
+
+.inputContainer {
+  @include centering-container;
+  padding: 10px 75px;
+}

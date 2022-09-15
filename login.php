@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="login.css" />
     <title>Icepace</title>
 </head>
 <body>
@@ -16,14 +17,14 @@
     <h1>Icepace</h1>
 </nav>
 <div class="loginPageContainer">
-    <div>
+    <div class="loginPageFormContainer">
         <h2 class="loginTitle">Login</h2>
         <form class="loginForm" action="">
-            <div>
+            <div class="inputContainer">
                 <label for="usernameInput">Username:</label>
                 <input type-="text" class="usernameInput" id="usernameInput" />
             </div>
-            <div>
+            <div class="inputContainer">
                 <label for="passwordInput">Password:</label>
                 <input type-="password" class="passwordInput" id="passwordInput" />
             </div>
