@@ -13,71 +13,65 @@ class UserCreator
     const BIO_REQUIRED = 'Please enter a your bio';
     const BIO_INVALID = 'Your bio is longer than 2000 characters';
 
-
-    private static function validateInput($username, $password, $bio): array
-    {
-        $errorArray = [];
-        $errorArray['username'] = self::validateUsername($username);
-        $errorArray['password'] = self::validatePassword($password);
-        $errorArray['bio'] = self::validateBio($bio);
-        return $errorArray;
-    }
-
     private static function sanitiseUsername(string $username): string
     {
-        return trim(filter_input(INPUT_POST, $username, FILTER_SANITIZE_STRING));
+        return trim(filter_var($username, FILTER_SANITIZE_STRING));
     }
 
     private static function sanitiseBio(string $bio): string
     {
-        return filter_input(INPUT_POST, $bio, FILTER_SANITIZE_STRING);
+        return filter_var($bio, FILTER_SANITIZE_STRING);
     }
 
-    private static function validateUsername(string $username): string
+    private static function validateUsername(string $username): ?string
     {
-        $username === '' ? $errorString = UserCreator::NAME_REQUIRED : $errorString = '';
-        return $errorString;
+        if ($username === '') {
+            return UserCreator::NAME_REQUIRED;
+        }
+        return null;
     }
 
-    private static function validatePassword(string $password): string
+    private static function validatePassword(string $password): ?string
     {
         if ($password === '') {
-            $errorString = UserCreator::PASSWORD_REQUIRED;
+            return UserCreator::PASSWORD_REQUIRED;
         } elseif (strlen($password) < 8) {
-            $errorString = UserCreator::PASSWORD_INVALID;
-        } else {
-            $errorString = '';
+            return UserCreator::PASSWORD_INVALID;
         }
-        return $errorString;
+        return null;
     }
 
-    private static function validateBio(string $bio): string
+    private static function validateBio(string $bio): ?string
     {
         if ($bio === '') {
-            $errorString = UserCreator::BIO_REQUIRED;
+            return UserCreator::BIO_REQUIRED;
         } elseif (strlen($bio) > 2000) {
-            $errorString = UserCreator::BIO_INVALID;
-        } else {
-            $errorString = '';
+            return UserCreator::BIO_INVALID;
         }
-        return $errorString;
+        return null;
     }
 
     public static function insertUserIntoDb(string $username, string $password, string $bio, PDO $db): array
     {
         $placeholderAvatar = 'placeholder.jpeg';
+        $result['errors']['username'] = self::validateUsername($username);
+        $result['errors']['password'] = self::validatePassword($password);
+        $result['errors']['bio'] = self::validateBio($bio);
 
         $username = self::sanitiseUsername($username);
         $bio = self::sanitiseBio($bio);
-        $result['errors'] = self::validateInput($username, $password, $bio);
         $hashed_pass = password_hash($password, PASSWORD_BCRYPT);
 
-        $queryString = 'INSERT INTO  `users` (`username`, `hashed_pass`, `bio`, `avatar`) 
+        if ($result['errors']['username'] === null && $result['errors']['password'] === null && $result['errors']['bio'] === null) {
+            $queryString = 'INSERT INTO  `users` (`username`, `hashed_pass`, `bio`, `avatar`) 
         VALUES (:username, :hashed_pass, :bio, :avatar)';
-        $query = $db->prepare($queryString);
-        $result['success'] = $query->execute(['username' => $username, 'hashed_pass' => $hashed_pass, 'bio' => $bio, 'avatar' => $placeholderAvatar]);
-        if(!$result['success']) {
-            $result['errors']['username'] = self::NAME_TAKEN;
+            $query = $db->prepare($queryString);
+            $result['success'] = $query->execute(['username' => $username, 'hashed_pass' => $hashed_pass, 'bio' => $bio, 'avatar' => $placeholderAvatar]);
+            if(!$result['success']) {
+                $result['errors']['username'] = self::NAME_TAKEN;
+            }
+        } else {
+            $result['success'] = false;
         }
         return $result;
     }

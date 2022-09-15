@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'vendor/autoload.php';
 use Icepace\UserCreator;
 
@@ -10,22 +10,18 @@ if (isset($_POST['usernameInput']) && isset($_POST['passwordInput']) && isset($_
     $password = $_POST['passwordInput'];
     $bio = $_POST['bioInput'];
 
-    $errorArray = UserCreator::insertUserIntoDb($username, $password, $bio, $db);
-    if(empty($errorArray)){
+    $result = UserCreator::insertUserIntoDb($username, $password, $bio, $db);
+    if($result['success']){
         header('Location: index.php');
+        unset($_SESSION['errors']);
     } else {
-        $_SESSION['errors'] = $errorArray;
-//        $htmlString = '<div>
-//            <h2>Sign up Errors ---</h2>
-//            <p>' . $errorArray['username'] . '</p>
-//            <p>' . $errorArray['password'] . '</p>
-//            <p>' . $errorArray['bio'] . '</p>
-//            <p>' . $errorArray['database'] . '</p>
-//            <p>Please go back and try again</p>
-//            </div>';
-//        echo $htmlString;
+        //WE ARE HERE -> RESULTS ARRAY IS PASSED CORRECTLY HOWEVER NOT BEING ASSIGNED TO _SESSION
+        $_SESSION['errors'] = $result['errors'];
+        $test = var_dump($result);
+//        header("Location: $test");
     }
+} else {
+    header('Location: google.com');
 }
 
-header('Location: registrationPage.php');
 ?>
