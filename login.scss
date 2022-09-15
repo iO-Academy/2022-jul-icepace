@@ -1,6 +1,8 @@
 @import './index.scss';
 
 $background-login: #D1D8E2;
+$background-login-button: #339DFF;
+$color-white: #ffffff;
 
 .loginPageContainer {
   padding: 100px 20px 50px 20px;
@@ -11,18 +13,41 @@ $background-login: #D1D8E2;
 .loginPageFormContainer {
   background-color: $background-login;
   width: 100%;
-  height: 450px;
+  height: 300px;
   max-width: 450px;
   border-radius: 25px;
   margin: 0 auto;
+  .loginTitle {
+    text-align: center;
+    padding: 15px;
+  }
+  .inputContainer {
+    @include centering-container;
+    padding: 5px 75px;
+  }
+  .inputLabel {
+    padding: 0 0 10px 0;
+  }
+  .submitForm {
+    background: $background-login-button;
+    color: $color-white;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 38px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    border-width: 0;
+    &:hover {
+      background: #fff;
+      color: #339DFF;
+      box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+    }
+  }
 }
 
-.loginTitle {
-  text-align: center;
-  padding: 15px;
-}
 
-.inputContainer {
-  @include centering-container;
-  padding: 10px 75px;
-}
+

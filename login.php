@@ -21,14 +21,16 @@
         <h2 class="loginTitle">Login</h2>
         <form class="loginForm" action="">
             <div class="inputContainer">
-                <label for="usernameInput">Username:</label>
+                <label class="inputLabel" for="usernameInput">Username</label>
                 <input type-="text" class="usernameInput" id="usernameInput" />
             </div>
             <div class="inputContainer">
-                <label for="passwordInput">Password:</label>
+                <label class="inputLabel" for="passwordInput">Password</label>
                 <input type-="password" class="passwordInput" id="passwordInput" />
             </div>
-            <button type="submit" class="submitForm" >Submit</button>
+            <div class="inputContainer">
+            <input class="submitForm" type="submit" value="Login to Icepace!">
+            </div>
         </form>
     </div>
 </div>
