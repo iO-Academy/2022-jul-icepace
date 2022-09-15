@@ -46,17 +46,17 @@ try {
                     <input type="radio" class="avatarSelectRadio" value="placeholder.jpg" name="avatar" />
                 </div>
                 <div class="radioContainer">
-                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder2.jpg" alt="placeholder" />
                     <input type="radio" class="avatarSelectRadio" value="placeholder2.jpg" name="avatar" />
                 </div>
             </div>
             <div class="radioBottomContainer">
                 <div class="radioContainer">
-                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder3.jpg" alt="placeholder" />
                     <input type="radio" class="avatarSelectRadio" value="placeholder3.jpg" name="avatar" />
                 </div>
                 <div class="radioContainer">
-                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
+                    <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder4.jpg" alt="placeholder" />
                     <input type="radio" class="avatarSelectRadio" value="placeholder4.jpg" name="avatar" />
                 </div>
             </div>
