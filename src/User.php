@@ -10,6 +10,15 @@ class User
     protected string $avatar;
     protected string $hashed_pass;
 
+    /**
+     * This constructor is only to be used for unit testing purposes
+     *
+     * @param int $id example id for testing purposes
+     * @param string $username example username for testing purposes
+     * @param string $hashed_pass example hashed password for testing purposes
+     * @param string $bio example bio for testing purposes
+     * @param string $avatar example avatar for testing purposes
+     */
     public function __construct(int $id = 0, string $username = '', string $hashed_pass = '', string $bio = '', string $avatar = '')
     {
         $this->id = $id;
@@ -24,22 +33,29 @@ class User
         return $this->username;
     }
 
-    public function getAvatar(): string
+    public function getFullAvatarPath(): string
     {
-        return $this->avatar;
+        return "./assets/imgs/avatars/" . $this->avatar;
     }
 
-    public function getBio(): string
+    public function getSanitizedBio(): string
     {
-        return $this->bio;
+        $bioStripped = strip_tags($this->bio);
+        return str_replace("\n", '<br />', $bioStripped);
+    }
+
+    public function getHashedPass(): string
+    {
+        return $this->hashed_pass;
     }
 
     public function createUserCardHtml(): string
     {
-        $htmlOutput = '<div class="userCard">';
-        $htmlOutput .= '<img class="avatarImg" src="' . $this->avatar . '" alt="Profile Picture">';
+        $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
+        $htmlOutput .= '<div class="userCard">';
+        $htmlOutput .= '<img class="avatarImg" src="' . $this->getFullAvatarPath() . '" alt="Profile picture" />';
         $htmlOutput .= '<p class="cardUsernameText">' . $this->username . '</p>';
-        $htmlOutput .= '</div>';
+        $htmlOutput .= '</div></a>';
         return $htmlOutput;
     }
 }
