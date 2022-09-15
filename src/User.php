@@ -43,12 +43,7 @@ class User
         $bioStripped = strip_tags($this->bio);
         return str_replace("\n", '<br />', $bioStripped);
     }
-
-    public function getHashedPass(): string
-    {
-        return $this->hashed_pass;
-    }
-
+    
     public function createUserCardHtml(): string
     {
         $htmlOutput = '<a class="profileLink" href="./userProfile.php?username=' . $this->getUsername() . '">';
