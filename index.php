@@ -24,7 +24,7 @@ $users = UserHydrator::getAllUsers($db);
         <div class="navBarButton">
         <a class="navButton" href="login.php">Login</a>
         <a class="navButton" href="">Logout</a>
-        <a class="signUp" href="registrationPage.php">Sign up</a>
+        <a class="navButton" href="registrationPage.php">Sign up</a>
         </div>
     </nav>
     <div class="allUserCardsContainer">
