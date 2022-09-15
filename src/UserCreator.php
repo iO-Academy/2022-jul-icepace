@@ -6,8 +6,8 @@ use PDO;
 
 class UserCreator
 {
-    const NAME_REQUIRED = 'Please enter your name';
-    const NAME_TAKEN = 'Someone already has this username! Please enter a unique one';
+    const USERNAME_REQUIRED = 'Please enter your username';
+    const USERNAME_TAKEN = 'Someone already has this username! Please enter a unique one';
     const PASSWORD_REQUIRED = 'Please enter your password';
     const PASSWORD_INVALID = 'Your password is shorter than 8 characters';
     const BIO_REQUIRED = 'Please enter your bio';
@@ -26,7 +26,7 @@ class UserCreator
     private static function validateUsername(string $username): ?string
     {
         if ($username === '') {
-            return UserCreator::NAME_REQUIRED;
+            return UserCreator::USERNAME_REQUIRED;
         }
         return null;
     }
@@ -70,7 +70,7 @@ class UserCreator
             $query = $db->prepare($queryString);
             $result['success'] = $query->execute(['username' => $username, 'hashed_pass' => $hashed_pass, 'bio' => $bio, 'avatar' => $placeholderAvatar]);
             if(!$result['success']) {
-                $result['errors']['username'] = self::NAME_TAKEN;
+                $result['errors']['username'] = self::USERNAME_TAKEN;
             }
         } else {
             $result['success'] = false;
