@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: 127.0.0.1 (MySQL 5.7.31)
+# Host: 127.0.0.1 (MySQL 5.7.38)
 # Database: icepace
-# Generation Time: 2022-09-12 15:36:27 +0000
+# Generation Time: 2022-09-15 08:38:41 +0000
 # ************************************************************
 
 
@@ -26,12 +26,13 @@
 DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) DEFAULT NULL,
-  `hashed_pass` varchar(500) DEFAULT NULL,
-  `bio` varchar(5000) DEFAULT NULL,
-  `avatar` varchar(500) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                         `username` varchar(50) DEFAULT NULL,
+                         `hashed_pass` varchar(500) DEFAULT NULL,
+                         `bio` varchar(5000) DEFAULT NULL,
+                         `avatar` varchar(500) DEFAULT NULL,
+                         PRIMARY KEY (`id`),
+                         UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `users` WRITE;
@@ -39,7 +40,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `username`, `hashed_pass`, `bio`, `avatar`)
 VALUES
-	(1,'rayna_like_china','$2y$10$ZhvZ6qlkLuexCgA5ANlb.eCSlbHgzPOCg94oa7ul3Ir2crzBOcgE2','hi i\'m rayna, i\'m just a small town girl who happened to win the mentor of the year award at the 2022 Sparkie awards &#128563;\n\nmy favourite things to do are painting my nails, complaining, drinking pepsi max and listening to music. my least favourite things are emptying the dishwasher, walking up steps, having good posture and being quiet.\n\ni like to teach people how to code. the best part is when they don\'t understand something, then i explain it to them and then they say they understand it now','placeholder.jpg'),
+    (1,'rayna_like_china','$2y$10$ZhvZ6qlkLuexCgA5ANlb.eCSlbHgzPOCg94oa7ul3Ir2crzBOcgE2','hi i\'m rayna, i\'m just a small town girl who happened to win the mentor of the year award at the 2022 Sparkie awards &#128563;\n\nmy favourite things to do are painting my nails, complaining, drinking pepsi max and listening to music. my least favourite things are emptying the dishwasher, walking up steps, having good posture and being quiet.\n\ni like to teach people how to code. the best part is when they don\'t understand something, then i explain it to them and then they say they understand it now','placeholder.jpg'),
 	(2,'timyop','$2y$10$fDynnjdU6WRhrVmDUVNg4O8ze3b/Rds.djtX9D.a0ZqY6H1G0iqGO','hey bro, i am Tom and this is my icepace!\n\nhave you heard of the movie Surf\'s up? it\'s this animated mockumentary about surfing penguins and the main character is called Cody Maverick and everything is sooo cool bro &#129305; i like to think i\'m a little bit like Cody. but then i think... maybe that\'s true of all of us, haha &#128524;\n\n\none thing about me is that i\'m a full-on coder. like if you ask me to sit down right now and write you a website i will literally write a website. my favourite is definitely JavaScript and React, but i can write some el php if you ask me nicely haha &#128541;','placeholder.jpg'),
 	(3,'ash_like_flash','$2y$10$CM8MuennG0AFZ5S58Py4ReP334apI2pVn9GLKx8AapqDUJTu5AupO','A drinker of too much coffee, enthusiastic food cooker, player of mediocre guitar, Monday morning hater, listener of music, awful bio writer, teacher of software and fanatical F1 watcher.\nSelf confessed broccoli enjoyer.\nIf I eat any more Pizza, I will become a Pizza.','placeholder.jpg'),
 	(4,'charlie_like_barley','$2y$10$No1ET6aUCVsC1Vh2ZwhxDexrWXOcWxLkidGKmmwXMVKeZXZibiIpO','Yoooo welcome to my icepace!\n\nMy name is Charlie and I like to do coding and teaching. But more importantly than that, I like Mario Kart.\n\nLet\'s talk more about coding! My favourite part of coding is the backend of the frontend, so like React for example. Response Cuthbert pull request Well volunteered Gabriel fave food => pizza rubber ducking Black Widow request DiKnow. Raurie Herbert Dr Jean Grey Product Owner object nodes Garry. Git fetch Barry SWGOL null git fetch Product Owner hard refresh dog => Luigi Norbert defer spicy standups. AOB DiKnow Gabriel async rem git stash pop bounce by the ounce spicy standups dog => Luigi first child.\n\nLets find out if these inputs are sanitised: <img src=\"https://media1.giphy.com/media/Vuw9m5wXviFIQ/200w.gif\" />\n','placeholder.jpg'),
