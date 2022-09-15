@@ -43,21 +43,21 @@ try {
             <div class="radioTopContainer">
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
-                    <input type="radio" class="avatarSelectRadio" value="placeholder.jpg" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder.jpg" name="avatar" />
                 </div>
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
-                    <input type="radio" class="avatarSelectRadio" value="placeholder2.jpg" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder2.jpg" name="avatar" />
                 </div>
             </div>
             <div class="radioBottomContainer">
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
-                    <input type="radio" class="avatarSelectRadio" value="placeholder3.jpg" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder3.jpg" name="avatar" />
                 </div>
                 <div class="radioContainer">
                     <img class="placeholderPhoto" src="./assets/imgs/avatars/placeholder.jpg" alt="placeholder" />
-                    <input type="radio" class="avatarSelectRadio" value="placeholder4.jpg" />
+                    <input type="radio" class="avatarSelectRadio" value="placeholder4.jpg" name="avatar" />
                 </div>
             </div>
             <div class="bioContainer">
