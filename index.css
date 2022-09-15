@@ -26,17 +26,12 @@ body .homePageTitle {
 }
 body .navButton {
   padding: 20px 7px;
-  margin: 0 20px;
+  margin: 0 5px;
   display: block;
-  width: 60px;
-  height: 60px;
-  background-color: #ffffff;
   border-radius: 50%;
   font-size: 0.8rem;
   text-decoration: none;
-  font-family: "Trebuchet MS", sans-serif;
   color: #000000;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-align: center;
   line-height: 20px;
@@ -45,6 +40,16 @@ body .navBarButton {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+}
+body .buttonContainer {
+  background-image: url("./assets/imgs/snowball.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  width: 70px;
+  height: 60px;
+  font-size: 40px;
+  margin: 0 5px;
 }
 body h1 {
   padding: 15px 0 15px 10px;

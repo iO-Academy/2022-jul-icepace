@@ -18,8 +18,12 @@
         <h1>Icepace</h1>
     </a>
     <div class="navBarButton">
-        <a class="navButton" href="login.php">Login</a>
-        <a class="navButton" href="">Logout</a>
+        <div class="buttonContainer">
+            <a class="navButton" href="login.php">Login</a>
+        </div>
+        <div class="buttonContainer">
+            <a class="navButton" href="">Logout</a>
+        </div>
     </div>
 </nav>
 <div class="loginPageContainer">
