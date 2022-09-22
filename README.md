@@ -29,7 +29,7 @@ From the root of the project run
 ```  
 Install the database `icepace.sql` into a db named icepace
 
-Ensure yoour local database host, username and password details are correct in: 
+Ensure your local database host, username and password details are correct in: 
 ```
   index.php
   
